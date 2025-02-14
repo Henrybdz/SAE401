@@ -44,7 +44,7 @@ class vue {
 
     $contenu = ob_get_clean();
     
-    $footer = "&copy; MMI Mulhouse"; //A changer
+    $footer = "";
   
     require "gabarit.php";
   }
