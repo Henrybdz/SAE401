@@ -1,10 +1,14 @@
 <?php
-require_once "database.class.php";
-class Egames extends database {
+class Egames {
+    private $egamesData;
+
+    public function __construct() {
+        // Charger les données du fichier JSON
+        $jsonContent = file_get_contents('Donnees/egames.json');
+        $this->egamesData = json_decode($jsonContent, true);
+    }
 
     public function getAllEgames() {
-        $req = "SELECT * FROM egames";
-        $egames = $this->execReq($req);
-        return $egames;
+        return $this->egamesData['egames'];
     }
 }

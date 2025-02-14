@@ -1,0 +1,47 @@
+{
+    "fr": {
+        "accueil": "Accueil",
+        "egames": "Escape Games",
+        "contact": "Contact",
+        "contacter": "Contactez-nous",
+        "bienvenue": "Bienvenue sur notre site web !",
+        "lang_fr": "Français",
+        "lang_en": "Anglais",
+        "lang_de": "Allemand",
+        "duree": "Durée",
+        "description": "Description",
+        "lieu": "Lieu",
+        "heures": "heures",
+        "aucunegame": "Aucun escape game n'est enregistré dans la liste"
+    },
+    "en": {
+        "accueil": "Home",
+        "egames": "Escape Games",
+        "contact": "Contact",
+        "contacter": "Contact us",
+        "bienvenue": "Welcome to our website !",
+        "lang_fr": "French",
+        "lang_en": "English",
+        "lang_de": "German",
+        "duree": "Duration",
+        "description": "Description",
+        "lieu": "Location",
+        "heures": "hours",
+        "aucunegame": "No escape game is registered in the list"
+    },
+    "de": {
+        "accueil": "Startseite",
+        "egames": "Escape Games",
+        "contact": "Kontakt",
+        "contacter": "Kontaktieren Sie uns",
+        "bienvenue": "Willkommen auf unserer Website !",
+        "lang_fr": "Französisch",
+        "lang_en": "Englisch",
+        "lang_de": "Deutsch",
+        "duree": "Dauer",
+        "description": "Beschreibung",
+        "lieu": "Ort",
+        "heures": "Stunden",
+        "aucunegame": "Es gibt keine Escape Games in der Liste"
+    }
+}

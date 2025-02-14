@@ -6,4 +6,4 @@ $header = "<nav>
 </nav>";
 ?>
 
-<h2>Contact-nous !</h2>
+<h2 data-translate="contacter">Contact-nous !</h2>

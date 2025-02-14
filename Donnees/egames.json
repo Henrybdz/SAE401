@@ -1,0 +1,49 @@
+{
+    "egames": [
+        {
+            "id": 1,
+            "nom": {
+                "fr": "Le Trésor Perdu",
+                "en": "The Lost Treasure",
+                "de": "Der verlorene Schatz"
+            },
+            "duree": 2,
+            "lieu": "Paris",
+            "description": {
+                "fr": "Partez à l'aventure dans les catacombes de Paris à la recherche d'un trésor légendaire !",
+                "en": "Embark on an adventure in the catacombs of Paris in search of a legendary treasure!",
+                "de": "Begeben Sie sich auf ein Abenteuer in den Katakomben von Paris auf der Suche nach einem legendären Schatz!"
+            }
+        },
+        {
+            "id": 2,
+            "nom": {
+                "fr": "L'Énigme du Laboratoire",
+                "en": "The Laboratory Mystery",
+                "de": "Das Labor-Rätsel"
+            },
+            "duree": 1.5,
+            "lieu": "Lyon",
+            "description": {
+                "fr": "Un virus mortel menace l'humanité. Vous avez 90 minutes pour trouver l'antidote !",
+                "en": "A deadly virus threatens humanity. You have 90 minutes to find the antidote!",
+                "de": "Ein tödliches Virus bedroht die Menschheit. Sie haben 90 Minuten Zeit, das Gegenmittel zu finden!"
+            }
+        },
+        {
+            "id": 3,
+            "nom": {
+                "fr": "Le Manoir Hanté",
+                "en": "The Haunted Manor",
+                "de": "Das Spukhaus"
+            },
+            "duree": 1,
+            "lieu": "Marseille",
+            "description": {
+                "fr": "Osez pénétrer dans ce manoir hanté et découvrez ses terribles secrets avant qu'il ne soit trop tard !",
+                "en": "Dare to enter this haunted mansion and discover its terrible secrets before it's too late!",
+                "de": "Wagen Sie es, dieses Spukhaus zu betreten und entdecken Sie seine schrecklichen Geheimnisse, bevor es zu spät ist!"
+            }
+        }
+    ]
+}
