@@ -1,33 +1,68 @@
 <?php
-require "controleur/ctlegames.class.php";
 require "controleur/ctlpages.class.php";
+require "controleur/ctlauth.class.php";
+require "controleur/ctlegames.class.php";
 
-class Rooter{
-    private $ctlEgames;
+class Rooter {
     private $ctlPage;
+    private $ctlAuth;
+    private $ctlEgames;
 
-    public function __construct(){ 
+    public function __construct() {
         $this->ctlEgames = new ctlEgames();
-        $this->ctlPage = new ctlPage();
+        $this->ctlPage = new CtlPage();
+        $this->ctlAuth = new CtlAuth();
     }
 
-    public function rooterRequete(){
+    public function rooterRequete() {
         try {
             if (isset($_GET["action"])) {
-              switch ($_GET["action"]) {
-                case "egames":
-                    $this->ctlEgames->egames();                                                            // Affichage de la liste des clients
+                $action = $_GET["action"];
+            } else {
+                $action = "accueil";
+            }
+
+            switch($action) {
+                case "accueil":
+                    $this->ctlPage->accueil();
                     break;
-                case "contact";
-                    $this->ctlPage->contact();  
+                case "egames":
+                    $this->ctlEgames->egames();
+                    break;
+                case "egameDetail":
+                    $this->ctlEgames->egameDetail();
+                    break;
+                case "contact":
+                    $this->ctlPage->contact();
+                    break;
+                case "login":
+                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                        $this->ctlAuth->processLogin();
+                    } else {
+                        $this->ctlAuth->showLoginForm();
+                    }
+                    break;
+                case "register":
+                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                        $this->ctlAuth->processRegister();
+                    } else {
+                        $this->ctlAuth->showRegisterForm();
+                    }
+                    break;
+                case "logout":
+                    $this->ctlAuth->logout();
+                    break;
+                case "profile":
+                    $this->ctlAuth->showProfile();
+                    break;
+                case "update-profile-picture":
+                    $this->ctlAuth->updateProfilePicture();
                     break;
                 default:
-                  throw new Exception("Action non valide");
-              }
-            } else
-              $this->ctlPage->accueil();
-          } catch (Exception $e) {                                                      // Page d'erreur
+                    throw new Exception("Action non valide");
+            }
+        } catch(Exception $e) {
             $this->ctlPage->erreur($e->getMessage());
-          }
+        }
     }
 }

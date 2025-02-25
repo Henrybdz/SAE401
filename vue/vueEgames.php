@@ -13,7 +13,7 @@
     if (isset($egames) && !empty($egames)) {
       echo '<div class="egames-grid">';
       foreach($egames as $egame) {
-        echo '<div class="egame-card">';
+        echo '<a href="index.php?action=egameDetail&id=' . htmlspecialchars($egame['id']) . '" class="egame-card">';
         // Titre traduit
         echo '<h2 class="translated-title" ' .
              'data-fr="' . htmlspecialchars($egame['nom']['fr']) . '" ' .
@@ -32,7 +32,7 @@
              htmlspecialchars($egame['description']['fr']) . '</span></p>';
         
         echo '<p><strong><span data-translate="lieu">Lieu</span></strong>: ' . htmlspecialchars($egame['lieu']) . '</p>';
-        echo '</div>';
+        echo '</a>';
       }
       echo '</div>';
     }

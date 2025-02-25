@@ -75,4 +75,308 @@
   
   .lang-selector button:hover {
     background-color: #ccc;
-  } 
+  }
+
+  /* Styles pour le système de compte */
+  .compte {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profile-image-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-hover {
+    position: absolute;
+    top: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: none;
+    min-width: 150px;
+    z-index: 1000;
+  }
+
+  .profile-image-wrapper:hover .profile-hover {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .username {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .profile-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .profile-link:hover {
+    background: #f0f0f0;
+  }
+
+  .logout-btn {
+    color: #dc3545;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .logout-btn:hover {
+    background: #ffe6e6;
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .login-btn, .register-btn {
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .login-btn {
+    background: #007bff;
+    color: white;
+  }
+
+  .register-btn {
+    background: #28a745;
+    color: white;
+  }
+
+  /* Styles pour les formulaires d'authentification */
+  .auth-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .form-group input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .auth-form button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .auth-form button:hover {
+    background: #0056b3;
+  }
+
+  .auth-container p {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .auth-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .auth-container a:hover {
+    text-decoration: underline;
+  }
+
+  .auth-links {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .auth-links span {
+    margin-right: 5px;
+  }
+
+  .auth-links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Styles pour la page de profil */
+  .profile-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .profile-header {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 30px;
+  }
+
+  .profile-image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .profile-image-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .profile-picture-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .custom-file-upload {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .custom-file-upload:hover {
+    background: rgba(0,0,0,0.9);
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .profile-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .date-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .error-message {
+    background: #ffe6e6;
+    color: #dc3545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  /* Styles pour les cartes d'escape games cliquables */
+  .egame-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .egame-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  /* Styles pour la page de détails d'escape game */
+  .egame-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .egame-detail h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .egame-info {
+    margin: 2rem 0;
+  }
+
+  .egame-info p {
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+
+  .back-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.2s;
+  }
+
+  .back-button:hover {
+    background-color: #0056b3;
+  }

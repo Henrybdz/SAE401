@@ -11,4 +11,13 @@ class Egames {
     public function getAllEgames() {
         return $this->egamesData['egames'];
     }
+
+    public function getEgameById($id) {
+        foreach ($this->egamesData['egames'] as $egame) {
+            if ($egame['id'] == $id) {
+                return $egame;
+            }
+        }
+        return null;
+    }
 }

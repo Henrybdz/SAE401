@@ -19,4 +19,13 @@ class ctlPage
         $page->afficher(array());
     }
 
+    public function login(){
+        $page = new Vue("Connexion");
+        $page->afficher(array());
+    }
+
+    public function register(){
+        $page = new Vue("Inscription");
+        $page->afficher(array());
+    }
 }
