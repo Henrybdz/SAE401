@@ -6,48 +6,59 @@ class Reservation extends database {
     private $id;
     private $user_id;
     private $egame_id;
-    private $time_slot_id;
+    private $start_time;
+    private $end_time;
     private $date;
-    private $status;
 
-    public function __construct($user_id = null, $egame_id = null, $time_slot_id = null, $date = null) {
+
+    public function __construct($user_id = null, $egame_id = null, $start_time = null, $end_time = null, $date = null) {
         $this->user_id = $user_id;
         $this->egame_id = $egame_id;
-        $this->time_slot_id = $time_slot_id;
+        $this->start_time = $start_time;
+        $this->end_time = $end_time;
         $this->date = $date;
-        $this->status = 'pending';
     }
 
     public function save() {
         try {
-            // Vérifier si le créneau est toujours disponible
-            if (!TimeSlot::isSlotAvailable($this->time_slot_id)) {
-                throw new Exception("Ce créneau n'est plus disponible");
-            }
-
             $pdo = $this->connexionBDD();
             $pdo->beginTransaction();
 
             try {
-                $query = "INSERT INTO reservations (user_id, egame_id, time_slot_id, date, status) 
-                         VALUES (:user_id, :egame_id, :time_slot_id, :date, :status)";
+                // Vérifier si le créneau est déjà réservé
+                $checkQuery = "SELECT COUNT(*) FROM reservations 
+                             WHERE egame_id = :egame_id 
+                             AND date = :date 
+                             AND start_time = :start_time 
+                             AND end_time = :end_time";
+                
+                $stmt = $pdo->prepare($checkQuery);
+                $stmt->execute([
+                    'egame_id' => $this->egame_id,
+                    'date' => $this->date,
+                    'start_time' => $this->start_time,
+                    'end_time' => $this->end_time
+                ]);
+                
+                if ($stmt->fetchColumn() > 0) {
+                    throw new Exception("Ce créneau est déjà réservé");
+                }
+
+                // Insérer la réservation
+                $query = "INSERT INTO reservations (user_id, egame_id, start_time, end_time, date) 
+                         VALUES (:user_id, :egame_id, :start_time, :end_time, :date)";
                 
                 $stmt = $pdo->prepare($query);
                 $success = $stmt->execute([
                     'user_id' => $this->user_id,
                     'egame_id' => $this->egame_id,
-                    'time_slot_id' => $this->time_slot_id,
-                    'date' => $this->date,
-                    'status' => $this->status
+                    'start_time' => $this->start_time,
+                    'end_time' => $this->end_time,
+                    'date' => $this->date
                 ]);
 
                 if (!$success) {
-                    throw new Exception("Erreur lors de la création de la réservation");
-                }
-
-                // Marquer le créneau horaire comme non disponible
-                if (!TimeSlot::markAsUnavailable($this->time_slot_id)) {
-                    throw new Exception("Erreur lors de la mise à jour du créneau horaire");
+                    throw new Exception("Erreur lors de l'enregistrement de la réservation");
                 }
                 
                 $pdo->commit();
@@ -57,19 +68,18 @@ class Reservation extends database {
                 throw $e;
             }
         } catch (Exception $e) {
-            throw new Exception("Erreur lors de la création de la réservation : " . $e->getMessage());
+            throw new Exception("Erreur lors de la réservation : " . $e->getMessage());
         }
     }
 
     public static function getUserReservations($user_id) {
         try {
             $instance = new self();
-            $query = "SELECT r.*, e.nom as egame_name, ts.start_time, ts.end_time 
+            $query = "SELECT r.*, e.nom as egame_name, r.start_time, r.end_time 
                      FROM reservations r
                      JOIN egames e ON r.egame_id = e.id
-                     JOIN time_slots ts ON r.time_slot_id = ts.id
                      WHERE r.user_id = :user_id
-                     ORDER BY r.date ASC, ts.start_time ASC";
+                     ORDER BY r.date ASC, r.start_time ASC";
             
             $result = $instance->execReqPrep($query, ['user_id' => $user_id]);
             

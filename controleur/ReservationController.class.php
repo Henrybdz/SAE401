@@ -1,8 +1,9 @@
 <?php
 require_once 'modele/TimeSlot.class.php';
 require_once 'modele/Reservation.class.php';
+require_once 'modele/database.class.php';
 
-class ReservationController {
+class ReservationController extends database {
     private function sendJsonResponse($data, $statusCode = 200) {
         http_response_code($statusCode);
         header('Content-Type: application/json');
@@ -49,7 +50,6 @@ class ReservationController {
                 ]);
             }
         } catch (Exception $e) {
-            error_log("Erreur dans getTimeSlots: " . $e->getMessage());
             $this->sendJsonResponse([
                 'error' => 'Erreur serveur: ' . $e->getMessage()
             ], 500);
@@ -77,17 +77,28 @@ class ReservationController {
                 ], 400);
             }
 
-            if (!isset($data['egame_id']) || !isset($data['time_slot_id']) || !isset($data['date'])) {
+            if (!isset($data['egame_id']) || !isset($data['start_time']) || !isset($data['end_time']) || !isset($data['date'])) {
                 $this->sendJsonResponse([
                     'success' => false,
                     'message' => 'Paramètres manquants'
                 ], 400);
             }
 
-            error_log("Tentative de réservation - User ID: " . $user_id . ", Date: " . $data['date'] . ", Time Slot: " . $data['time_slot_id'] . ", Egame: " . $data['egame_id']);
-
             // Vérifier si le créneau est toujours disponible
-            if (!TimeSlot::isSlotAvailable($data['time_slot_id'])) {
+            $query = "SELECT COUNT(*) as count FROM reservations 
+                     WHERE egame_id = :egame_id 
+                     AND date = :date 
+                     AND start_time = :start_time 
+                     AND end_time = :end_time";
+            
+            $result = $this->execReqPrep($query, [
+                'egame_id' => $data['egame_id'],
+                'date' => $data['date'],
+                'start_time' => $data['start_time'],
+                'end_time' => $data['end_time']
+            ]);
+
+            if ($result[0]['count'] > 0) {
                 $this->sendJsonResponse([
                     'success' => false,
                     'message' => 'Ce créneau n\'est plus disponible'
@@ -97,7 +108,8 @@ class ReservationController {
             $reservation = new Reservation(
                 $user_id,
                 $data['egame_id'],
-                $data['time_slot_id'],
+                $data['start_time'],
+                $data['end_time'],
                 $data['date']
             );
 
@@ -113,10 +125,9 @@ class ReservationController {
                 ], 500);
             }
         } catch (Exception $e) {
-            error_log("Erreur dans createReservation: " . $e->getMessage());
             $this->sendJsonResponse([
                 'success' => false,
-                'message' => 'Une erreur est survenue: ' . $e->getMessage()
+                'message' => $e->getMessage()
             ], 500);
         }
     }

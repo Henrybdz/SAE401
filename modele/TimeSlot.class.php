@@ -20,80 +20,113 @@ class TimeSlot extends database {
     public static function getAvailableTimeSlots($date, $egame_id) {
         try {
             $instance = new self();
-            $query = "SELECT id, start_time, end_time, date, is_available 
-                     FROM time_slots 
-                     WHERE egame_id = :egame_id 
-                     AND date = :date 
-                     AND is_available = true
-                     ORDER BY start_time ASC";
             
-            $result = $instance->execReqPrep($query, [
-                'egame_id' => $egame_id,
-                'date' => $date
-            ]);
+            // Charger les créneaux horaires depuis le JSON
+            $jsonPath = __DIR__ . '/../Donnees/default_time_slots.json';
+            $defaultSlots = json_decode(file_get_contents($jsonPath), true)['time_slots'];
 
-            if ($result === false) {
-                throw new Exception("Erreur lors de la récupération des créneaux horaires");
+            // Récupérer les réservations pour la date et l'egame spécifiques
+            $query = "SELECT * FROM reservations WHERE egame_id = :egame_id AND date = :date";
+            
+            try {
+                $reservedSlots = $instance->execReqPrep($query, [
+                    'egame_id' => $egame_id,
+                    'date' => $date
+                ]);
+            } catch (Exception $e) {
+                $reservedSlots = [];
             }
 
-            return $result;
+            // Convertir les créneaux réservés en tableau associatif
+            $reservedSlotsMap = [];
+            foreach ($reservedSlots as $slot) {
+                // Retirer les secondes des heures pour la comparaison
+                $startTime = substr($slot['start_time'], 0, 5); // "09:00:00" devient "09:00"
+                $endTime = substr($slot['end_time'], 0, 5);     // "10:00:00" devient "10:00"
+                $key = $startTime . '-' . $endTime;
+                $reservedSlotsMap[$key] = true;
+            }
+
+            // Créer deux tableaux séparés pour les créneaux
+            $availableSlots = [];
+            $reservedSlotsArray = [];
+
+            foreach ($defaultSlots as $slot) {
+                $id = str_replace(':', '', $slot['start_time']);
+                $key = $slot['start_time'] . '-' . $slot['end_time'];
+                
+                $slotData = [
+                    'id' => $id,
+                    'start_time' => $slot['start_time'],
+                    'end_time' => $slot['end_time'],
+                    'date' => $date
+                ];
+
+                if (isset($reservedSlotsMap[$key])) {
+                    $slotData['is_available'] = false;
+                    $reservedSlotsArray[] = $slotData;
+                } else {
+                    $slotData['is_available'] = true;
+                    $availableSlots[] = $slotData;
+                }
+            }
+
+            // Combiner les tableaux
+            $allSlots = array_merge($availableSlots, $reservedSlotsArray);
+
+            return $allSlots;
+
         } catch (Exception $e) {
-            throw new Exception("Erreur : " . $e->getMessage());
+            throw new Exception("Erreur lors de la récupération des créneaux : " . $e->getMessage());
         }
     }
 
     public function save() {
         try {
-            $query = "INSERT INTO time_slots (start_time, end_time, egame_id, date, is_available) 
-                     VALUES (:start_time, :end_time, :egame_id, :date, :is_available)";
+            $query = "INSERT INTO reservations (start_time, end_time, egame_id, date) 
+                     VALUES (:start_time, :end_time, :egame_id, :date)";
             
-            $result = $this->execReqPrep($query, [
+            $stmt = $this->connexionBDD()->prepare($query);
+            $result = $stmt->execute([
                 'start_time' => $this->start_time,
                 'end_time' => $this->end_time,
                 'egame_id' => $this->egame_id,
-                'date' => $this->date,
-                'is_available' => $this->is_available ? 1 : 0
+                'date' => $this->date
             ]);
 
             if ($result === false) {
                 throw new Exception("Erreur lors de l'enregistrement du créneau horaire");
             }
 
-            return true;
+            $this->id = $this->connexionBDD()->lastInsertId();
+            return $this->id;
         } catch (Exception $e) {
             throw new Exception("Erreur : " . $e->getMessage());
         }
     }
 
     public static function markAsUnavailable($slot_id) {
-        try {
-            $instance = new self();
-            $query = "UPDATE time_slots SET is_available = false WHERE id = :id";
-            $result = $instance->execReqPrep($query, ['id' => $slot_id]);
-
-            if ($result === false) {
-                throw new Exception("Erreur lors de la mise à jour du créneau horaire");
-            }
-
-            return true;
-        } catch (Exception $e) {
-            throw new Exception("Erreur : " . $e->getMessage());
-        }
+        // Cette méthode n'est plus nécessaire car nous gérons la disponibilité via les réservations
+        return true;
     }
 
     public static function isSlotAvailable($slot_id) {
         try {
             $instance = new self();
-            $query = "SELECT COUNT(*) as count FROM time_slots 
-                     WHERE id = :id AND is_available = true";
             
-            $result = $instance->execReqPrep($query, ['id' => $slot_id]);
+            // Convertir l'ID en format heure (par exemple "0900" devient "09:00")
+            $start_time = substr_replace($slot_id, ':', 2, 0);
             
-            if ($result === false) {
-                throw new Exception("Erreur lors de la vérification du créneau horaire");
-            }
+            // Vérifier si ce créneau est déjà réservé
+            $query = "SELECT COUNT(*) as count 
+                     FROM reservations 
+                     WHERE start_time = :start_time";
+            
+            $result = $instance->execReqPrep($query, [
+                'start_time' => $start_time
+            ]);
 
-            return !empty($result) && $result[0]['count'] > 0;
+            return !empty($result) && $result[0]['count'] === 0;
         } catch (Exception $e) {
             throw new Exception("Erreur : " . $e->getMessage());
         }

@@ -11,10 +11,22 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-bottom: 5px;
 }
 
-.slot-button:hover {
+.slot-button:hover:not(.reserved) {
     background-color: #45a049;
+}
+
+.slot-button.reserved {
+    background-color: #ff4444;
+    cursor: not-allowed;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.slot-button.available {
+    background-color: #4CAF50;
 }
 
 .error-message {

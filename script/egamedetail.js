@@ -59,13 +59,13 @@ function fetchTimeSlots(date) {
         displayTimeSlots(data.timeSlots || []);
     })
     .catch(error => {
-        console.error('Erreur:', error);
         container.innerHTML = `<p class="error-message">Une erreur est survenue: ${error.message}</p>`;
     });
 }
 
 // Fonction pour afficher les créneaux horaires
 function displayTimeSlots(timeSlots) {
+    
     const noSlots = document.getElementById('no-slots');
     const container = document.getElementById('time-slots-list');
     const timeSlotsContainer = document.getElementById('time-slots-container');
@@ -84,16 +84,32 @@ function displayTimeSlots(timeSlots) {
 
     noSlots.style.display = 'none';
     container.innerHTML = '';
+    
     timeSlots.forEach(slot => {
+        
         const slotElement = document.createElement('div');
         slotElement.className = 'time-slot';
+        
+        const buttonClass = slot.is_available ? 'slot-button available' : 'slot-button reserved';
+        const buttonStyle = slot.is_available ? '' : 'style="background-color: #ff4444 !important; cursor: not-allowed !important;"';
+        
         slotElement.innerHTML = `
-            <button class="slot-button" data-slot-id="${slot.id}">
+            <button class="${buttonClass}" 
+                    data-slot-id="${slot.id}" 
+                    ${buttonStyle}
+                    ${!slot.is_available ? 'disabled' : ''}>
                 ${slot.start_time} - ${slot.end_time}
+                ${!slot.is_available ? ' (Réservé)' : ''}
             </button>
         `;
         
-        slotElement.querySelector('button').addEventListener('click', () => selectTimeSlot(slot));
+        if (slot.is_available) {
+            const button = slotElement.querySelector('button');
+            button.addEventListener('click', () => {
+                selectTimeSlot(slot);
+            });
+        }
+        
         container.appendChild(slotElement);
     });
 }
@@ -104,20 +120,28 @@ function selectTimeSlot(slot) {
     const dateSelected = document.getElementById('selected-date');
     const timeSelected = document.getElementById('selected-time');
 
+    // Stocker le créneau complet
+    window.selectedSlot = slot;
+
     reservationForm.style.display = 'block';
 
     dateSelected.innerHTML = `<p>${document.getElementById('date-picker').value}</p>`;
     timeSelected.innerHTML = `<p>${slot.start_time} - ${slot.end_time}</p>`;
 
-    document.getElementById('confirm-reservation').onclick = () => confirmReservation(slot.id);
+    // Définissons le gestionnaire d'événements avec une fonction nommée pour le debug
+    const handleConfirmClick = () => {
+        confirmReservation(window.selectedSlot);
+    };
+    
+    document.getElementById('confirm-reservation').onclick = handleConfirmClick;
 }
 
 // Fonction pour confirmer la réservation
-function confirmReservation(slotId) {
+function confirmReservation(slot) {
     const date = document.getElementById('date-picker').value;
     const egameId = new URLSearchParams(window.location.search).get('id');
 
-    if (!date || !slotId || !egameId) {
+    if (!date || !slot || !egameId) {
         alert('Données de réservation manquantes');
         return;
     }
@@ -130,7 +154,8 @@ function confirmReservation(slotId) {
         },
         body: JSON.stringify({
             date: date,
-            time_slot_id: slotId,
+            start_time: slot.start_time,
+            end_time: slot.end_time,
             egame_id: egameId
         })
     })
@@ -152,7 +177,6 @@ function confirmReservation(slotId) {
         }
     })
     .catch(error => {
-        console.error('Erreur:', error);
         alert('Une erreur est survenue lors de la réservation');
     });
 }
