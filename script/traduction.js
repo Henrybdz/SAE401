@@ -27,7 +27,7 @@ function changeLang(lang) {
             }
         }
     });
-    
+
     // Mettre à jour le drapeau actif dans le sélecteur de langue
     const selector = document.querySelector('.language-selector');
     if (selector) {
@@ -52,6 +52,19 @@ document.addEventListener('DOMContentLoaded', function() {
             applyTranslation(savedLang);
             updateLanguageSelector(savedLang);
         });
+    
+    const savedLang = localStorage.getItem('selectedLang') || 'fr'; // Récupérer la langue sauvegardée ou par défaut
+    updateLanguageSelector(savedLang); // Mettre à jour le sélecteur de langue
+    updateDatePickerPlaceholder(savedLang); // Mettre à jour le placeholder du date-picker
+
+    const languageSelector = document.getElementById('language-selector');
+    if (languageSelector) { // Vérification de l'existence de l'élément
+        languageSelector.addEventListener('change', function() {
+            const selectedLanguage = this.value;
+            localStorage.setItem('selectedLang', selectedLanguage);
+            updateDatePickerPlaceholder(selectedLanguage);
+        });
+    }
 });
 
 function initCustomSelect() {
@@ -84,6 +97,7 @@ function initCustomSelect() {
             localStorage.setItem('selectedLang', lang);
             applyTranslation(lang);
             updateLanguageSelector(lang);
+            updateDatePickerPlaceholder(lang);
         }
     });
     
@@ -129,4 +143,14 @@ function updateLanguageSelector(lang) {
     if (selector) {
         selector.setAttribute('data-current-lang', lang);
     }
+}
+
+function updateDatePickerPlaceholder(language) {
+    const datePicker = document.getElementById('date-picker');
+    const placeholders = {
+        'fr': 'Choisissez une date',
+        'en': 'Choose a date',
+        'de': 'Wählen Sie ein Datum'
+    };
+    datePicker.placeholder = placeholders[language] || placeholders['fr'];
 }
