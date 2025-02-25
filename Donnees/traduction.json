@@ -31,7 +31,13 @@
         "membre":"Membre depuis le :",
         "changerphoto":"Changer la photo",
         "retour":"Retour à la liste",
-        "egame_not_found":"Escape game non trouvé"
+        "egame_not_found":"Escape game non trouvé",
+        "creneaux":"Créneaux disponibles",
+        "reservation_details":"Détails de la réservation",
+        "confirm_reservation":"Confirmer la réservation",
+        "selected_date":"Date sélectionnée :",
+        "selected_time":"Horaire sélectionné :",
+        "no_slots":"Aucun créneau disponible pour cette date"
     },
     "en": {
         "accueil": "Home",
@@ -65,7 +71,13 @@
         "membre":"Member since : ",
         "changerphoto":"Change the photo",
         "retour": "Back to list",
-        "egame_not_found": "Escape game not found"
+        "egame_not_found": "Escape game not found",
+        "creneaux":"Available slots",
+        "reservation_details":"Reservation details",
+        "confirm_reservation":"Confirm reservation",
+        "selected_date":"Selected date :",
+        "selected_time":"Selected time :",
+        "no_slots":"No slots available for this date"
     },
     "de": {
         "accueil": "Startseite",
@@ -99,6 +111,12 @@
         "membre":"Mitglied seit : ",
         "changerphoto":"Foto ändern",
         "retour": "Zurück zur Liste",
-        "egame_not_found": "Escape-Spiel nicht gefunden"
+        "egame_not_found": "Escape-Spiel nicht gefunden",
+        "creneaux":"Verfügbare Zeitfenster",
+        "reservation_details":"Details zur Reservierung",
+        "confirm_reservation":"Bestätigen der Reservierung",
+        "selected_date":"Ausgewaelte Datum :",
+        "selected_time":"Ausgewaelter Zeitraum :",
+        "no_slots":"Keine verfügbare Zeitfenster für diesen Tag"
     }
 }

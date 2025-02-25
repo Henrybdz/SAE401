@@ -2,16 +2,28 @@
 require "controleur/ctlpages.class.php";
 require "controleur/ctlauth.class.php";
 require "controleur/ctlegames.class.php";
+require "controleur/ReservationController.class.php";
 
 class Rooter {
     private $ctlPage;
     private $ctlAuth;
     private $ctlEgames;
+    private $ctlReservation;
 
     public function __construct() {
         $this->ctlEgames = new ctlEgames();
         $this->ctlPage = new CtlPage();
         $this->ctlAuth = new CtlAuth();
+        $this->ctlReservation = new ReservationController();
+    }
+
+    private function handleJsonError($e) {
+        header('Content-Type: application/json');
+        http_response_code(500);
+        echo json_encode([
+            'error' => $e->getMessage()
+        ]);
+        exit();
     }
 
     public function rooterRequete() {
@@ -34,6 +46,18 @@ class Rooter {
                     break;
                 case "contact":
                     $this->ctlPage->contact();
+                    break;
+                case "getTimeSlots":
+                case "createReservation":
+                    try {
+                        if ($action === "getTimeSlots") {
+                            $this->ctlReservation->getTimeSlots();
+                        } else {
+                            $this->ctlReservation->createReservation();
+                        }
+                    } catch (Exception $e) {
+                        $this->handleJsonError($e);
+                    }
                     break;
                 case "login":
                     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -61,8 +85,14 @@ class Rooter {
                 default:
                     throw new Exception("Action non valide");
             }
-        } catch(Exception $e) {
-            $this->ctlPage->erreur($e->getMessage());
+        } catch (Exception $e) {
+            // Si c'est une requête AJAX, renvoyer une erreur JSON
+            if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+                strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+                $this->handleJsonError($e);
+            } else {
+                $this->ctlPage->erreur($e->getMessage());
+            }
         }
     }
 }

@@ -1,5 +1,6 @@
 <!-- Ajout des dépendances pour le calendrier -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="style/reservation.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 <div class="egame-detail-container">
@@ -37,9 +38,28 @@
                 <!-- Ajoutez ici d'autres informations détaillées spécifiques à l'escape game -->
             </div>
 
-            <!-- Section pour le calendrier -->
-            <div id="calendar-container">
-                <input type="text" id="date-picker" placeholder="Choisissez une date" />
+            <!-- Section pour le calendrier et les réservations -->
+            <div id="reservation-container">
+                <div id="calendar-container">
+                    <input type="text" id="date-picker" placeholder="Choisissez une date" />
+                </div>
+                
+                <div id="time-slots-container" style="display: none;">
+                    <h3 data-translate="creneaux">Créneaux disponibles</h3>
+                    <div id="time-slots-list"></div>
+                    <p id="no-slots" class="no-slots" data-translate="no_slots">Aucun créneau disponible pour cette date</p>
+                </div>
+
+                <div id="reservation-form" style="display: none;">
+                    <h3 data-translate="reservation_details">Détails de la réservation</h3>
+                    <div id="reservation-summary">
+                        <div class="reservation-summary-date"><p data-translate="selected_date">Date sélectionnée : </p> <p id="selected-date"></p></div>
+                        <div class="reservation-summary-time"><p data-translate="selected_time">Horaire sélectionné : </p><p id="selected-time"></p></div>
+                    </div>
+                    <button id="confirm-reservation" class="btn-primary" data-translate="confirm_reservation">
+                        Confirmer la réservation
+                    </button>
+                </div>
             </div>
 
 

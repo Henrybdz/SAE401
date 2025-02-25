@@ -6,7 +6,8 @@
         <div class="error-message"><?= htmlspecialchars($error) ?></div>
     <?php endif; ?>
     
-    <form action="index.php?action=login" method="POST" class="auth-form">
+    <form action="index.php?action=login" method="post" class="auth-form">
+        <input type="hidden" name="redirect" value="<?php echo htmlspecialchars($redirect ?? ''); ?>">
         <div class="form-group">
             <label for="email" data-translate='email'>Email</label>
             <input type="email" id="email" name="email" required>

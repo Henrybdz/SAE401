@@ -1,0 +1,89 @@
+.time-slot {
+    margin: 10px 0;
+}
+
+.slot-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slot-button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: #ff0000;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.no-slots {
+    color: #666;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+#reservation-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+#no-slots {
+    display: none;
+}
+
+.no-slots-ok{
+    display: block;
+}
+
+
+#reservation-summary {
+    margin-bottom: 15px;
+}
+
+.reservation-summary-date, .reservation-summary-time {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    p {
+        margin: 2px;
+    }
+}
+
+#confirm-reservation {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#confirm-reservation:hover {
+    background-color: #1976D2;
+}
+
+#time-slots-container {
+    margin-top: 20px;
+}
+
+#calendar-container {
+    margin-bottom: 20px;
+}
+
+.flatpickr-calendar {
+    margin-top: 5px;
+}

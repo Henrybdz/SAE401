@@ -9,8 +9,9 @@ class CtlAuth {
     }
 
     public function showLoginForm() {
+        $redirect = isset($_GET['redirect']) ? $_GET['redirect'] : '';
         $page = new Vue("Connexion");
-        $page->afficher([]);
+        $page->afficher(['redirect' => $redirect]);
     }
 
     public function showRegisterForm() {
@@ -25,20 +26,32 @@ class CtlAuth {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
             $password = $_POST['password'];
+            $redirect = filter_input(INPUT_POST, 'redirect', FILTER_SANITIZE_URL);
 
             if ($email && $password) {
                 $result = $this->auth->login($email, $password);
                 
                 if ($result['success']) {
-                    header('Location: index.php');
+                    // Rediriger vers la page précédente si elle existe
+                    if (!empty($redirect)) {
+                        header('Location: ' . $redirect);
+                    } else {
+                        header('Location: index.php');
+                    }
                     exit();
                 } else {
                     $page = new Vue("Connexion");
-                    $page->afficher(['error' => $result['message']]);
+                    $page->afficher([
+                        'error' => $result['message'],
+                        'redirect' => $redirect
+                    ]);
                 }
             } else {
                 $page = new Vue("Connexion");
-                $page->afficher(['error' => 'Veuillez remplir tous les champs']);
+                $page->afficher([
+                    'error' => 'Veuillez remplir tous les champs',
+                    'redirect' => $redirect
+                ]);
             }
         } else {
             $this->showLoginForm();
