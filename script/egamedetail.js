@@ -99,7 +99,7 @@ function displayTimeSlots(timeSlots) {
                     ${buttonStyle}
                     ${!slot.is_available ? 'disabled' : ''}>
                 ${slot.start_time} - ${slot.end_time}
-                ${!slot.is_available ? ' (Réservé)' : ''}
+                ${!slot.is_available ? '' : ''}
             </button>
         `;
         
