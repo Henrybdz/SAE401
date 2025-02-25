@@ -1,5 +1,3 @@
-<?php $title = "Profil"; ?>
-
 <div class="profile-page">
     <div class="profile-header">
         <div class="profile-image-container">

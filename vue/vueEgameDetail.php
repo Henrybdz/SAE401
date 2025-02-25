@@ -1,4 +1,6 @@
-<?php $title = "Détails Escape Game"; ?>
+<!-- Ajout des dépendances pour le calendrier -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 <div class="egame-detail-container">
     <?php if (isset($egame)): ?>
@@ -12,8 +14,8 @@
 
             <div class="egame-info">
                 <p>
-                    <strong><span data-translate="duree">Durée</span></strong>: 
-                    <?= htmlspecialchars($egame['duree']) ?> 
+                    <strong><span data-translate="duree">Durée</span></strong>:
+                    <?= htmlspecialchars($egame['duree']) ?>
                     <span data-translate="heures">heures</span>
                 </p>
 
@@ -28,12 +30,18 @@
                 </p>
 
                 <p>
-                    <strong><span data-translate="lieu">Lieu</span></strong>: 
+                    <strong><span data-translate="lieu">Lieu</span></strong>:
                     <?= htmlspecialchars($egame['lieu']) ?>
                 </p>
 
                 <!-- Ajoutez ici d'autres informations détaillées spécifiques à l'escape game -->
             </div>
+
+            <!-- Section pour le calendrier -->
+            <div id="calendar-container">
+                <input type="text" id="date-picker" placeholder="Choisissez une date" />
+            </div>
+
 
             <a href="index.php?action=egames" class="back-button" data-translate="retour">Retour à la liste</a>
         </div>
@@ -45,30 +53,4 @@
     <?php endif; ?>
 </div>
 
-<script>
-// Fonction pour mettre à jour les textes traduits
-function updateTranslatedTexts(lang) {
-    // Mettre à jour les descriptions
-    document.querySelectorAll('.translated-description').forEach(desc => {
-        desc.textContent = desc.getAttribute('data-' + lang) || desc.getAttribute('data-fr');
-    });
-    
-    // Mettre à jour les titres
-    document.querySelectorAll('.translated-title').forEach(title => {
-        title.textContent = title.getAttribute('data-' + lang) || title.getAttribute('data-fr');
-    });
-}
-
-// Observer les changements de langue
-document.addEventListener('DOMContentLoaded', () => {
-    const langSelect = document.getElementById('langSelect');
-    if (langSelect) {
-        langSelect.addEventListener('change', (e) => {
-            updateTranslatedTexts(e.target.value);
-        });
-        // Appliquer la traduction initiale
-        const savedLang = localStorage.getItem('selectedLang') || 'fr';
-        updateTranslatedTexts(savedLang);
-    }
-});
-</script>
+<script src="script/egamedetail.js"></script>
