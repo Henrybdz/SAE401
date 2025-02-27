@@ -1,3 +1,7 @@
+<?php
+require_once "controleur/ReservationController.class.php";
+?>
+
 <div class="profile-page">
     <div class="profile-header">
         <div class="profile-image-container">
@@ -17,7 +21,19 @@
                 <p class="member-since" data-translate='membre'>Membre depuis le :</p>
                 <p><?= (new DateTime($user['date_inscription']))->format('d/m/Y') ?></p>
             </div>
+            <div class="info-reservation">
+                <h3 data-translate='mesreservations'>Mes reservations</h3>
+                <?php 
+                foreach ($reservationinfo as $reservation) {
+                    foreach ($reservation as $key => $value) {
+                        var_dump($key);
+                        var_dump($value);
+                    }
+                }
+                ?>
+            </div>
         </div>
+        
     </div>
 
     <?php if (isset($error)): ?>

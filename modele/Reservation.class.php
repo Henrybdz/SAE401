@@ -75,9 +75,8 @@ class Reservation extends database {
     public static function getUserReservations($user_id) {
         try {
             $instance = new self();
-            $query = "SELECT r.*, e.nom as egame_name, r.start_time, r.end_time 
+            $query = "SELECT r.egame_id,r.date, r.start_time, r.end_time 
                      FROM reservations r
-                     JOIN egames e ON r.egame_id = e.id
                      WHERE r.user_id = :user_id
                      ORDER BY r.date ASC, r.start_time ASC";
             

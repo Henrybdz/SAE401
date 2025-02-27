@@ -22,8 +22,8 @@ class TimeSlot extends database {
             $instance = new self();
             
             // Charger les créneaux horaires depuis le JSON
-            $jsonPath = __DIR__ . '/../Donnees/default_time_slots.json';
-            $defaultSlots = json_decode(file_get_contents($jsonPath), true)['time_slots'];
+            $jsonPath = __DIR__ . '/../Donnees/egames.json';
+            $defaultSlots = json_decode(file_get_contents($jsonPath), true)['egames'][($egame_id)-1]['time_slots'];
 
             // Récupérer les réservations pour la date et l'egame spécifiques
             $query = "SELECT * FROM reservations WHERE egame_id = :egame_id AND date = :date";

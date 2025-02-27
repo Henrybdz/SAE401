@@ -1,5 +1,6 @@
 <?php
 require_once 'modele/auth.class.php';
+require_once 'modele/Reservation.class.php';
 
 class CtlAuth {
     private $auth;
@@ -117,8 +118,10 @@ class CtlAuth {
             exit();
         }
 
+        $reservationinfo = Reservation::getUserReservations($currentUser['id']);
+
         $page = new Vue("Profil");
-        $page->afficher(['user' => $userInfo]);
+        $page->afficher(['user' => $userInfo, 'reservationinfo' => $reservationinfo]);
     }
 
     /**
