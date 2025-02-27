@@ -1,6 +1,7 @@
 <?php
 require_once 'modele/auth.class.php';
 require_once 'modele/Reservation.class.php';
+require_once 'modele/egames.class.php';
 
 class CtlAuth {
     private $auth;
@@ -120,8 +121,11 @@ class CtlAuth {
 
         $reservationinfo = Reservation::getUserReservations($currentUser['id']);
 
+        $egamesinstances = new Egames();
+        $egames = $egamesinstances->getAllEgames();
+        
         $page = new Vue("Profil");
-        $page->afficher(['user' => $userInfo, 'reservationinfo' => $reservationinfo]);
+        $page->afficher(['user' => $userInfo, 'reservationinfo' => $reservationinfo, 'egames' => $egames]);
     }
 
     /**

@@ -38,7 +38,10 @@
         "selected_date":"Date sélectionnée :",
         "selected_time":"Horaire sélectionné :",
         "no_slots":"Aucun créneau disponible pour cette date",
-        "mesreservations":"Mes réservations"
+        "mesreservations":"Mes réservations",
+        "date":"Date de réservation :",
+        "heuredebut":"Heure de début :",
+        "heurefin":"Heure de fin :"
     },
     "en": {
         "accueil": "Home",
@@ -79,7 +82,10 @@
         "selected_date":"Selected date :",
         "selected_time":"Selected time :",
         "no_slots":"No slots available for this date",
-        "mesreservations":"My reservations"
+        "mesreservations":"My reservations",
+        "date":"Reservation date :",
+        "heuredebut":"Start time :",
+        "heurefin":"End time :"
     },
     "de": {
         "accueil": "Startseite",
@@ -120,6 +126,9 @@
         "selected_date":"Ausgewaelte Datum :",
         "selected_time":"Ausgewaelter Zeitraum :",
         "no_slots":"Keine verfügbare Zeitfenster für diesen Tag",
-        "mesreservations":"Meine Reservierungen"
+        "mesreservations":"Meine Reservierungen",
+        "date":"Datum der Reservierung :",
+        "heuredebut":"Startzeit :",
+        "heurefin":"Endzeit :"
     }
 }

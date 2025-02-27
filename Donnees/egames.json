@@ -2,11 +2,7 @@
     "egames": [
         {
             "id": 1,
-            "nom": {
-                "fr": "Le Trésor Perdu",
-                "en": "The Lost Treasure",
-                "de": "Der verlorene Schatz"
-            },
+            "nom": "Le Trésor Perdu",
             "duree": 2,
             "lieu": "Paris",
             "description": {
@@ -35,11 +31,7 @@
         },
         {
             "id": 2,
-            "nom": {
-                "fr": "L'Énigme du Laboratoire",
-                "en": "The Laboratory Mystery",
-                "de": "Das Labor-Rätsel"
-            },
+            "nom": "L'Énigme du Laboratoire",
             "duree": 1.5,
             "lieu": "Lyon",
             "description": {
@@ -72,11 +64,7 @@
         },
         {
             "id": 3,
-            "nom": {
-                "fr": "Le Manoir Hanté",
-                "en": "The Haunted Manor",
-                "de": "Das Spukhaus"
-            },
+            "nom":"Le Manoir Hanté",
             "duree": 1,
             "lieu": "Marseille",
             "description": {

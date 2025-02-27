@@ -7,6 +7,8 @@
     <title><?= $title ?></title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/translation.css">
+    <link rel="stylesheet" href="style/profil.css">
+    <link rel="stylesheet" href="style/reservation.css">
     <script src="script/traduction.js" defer></script>
 </head>
 

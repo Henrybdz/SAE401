@@ -6,12 +6,7 @@
 <div class="egame-detail-container">
     <?php if (isset($egame)): ?>
         <div class="egame-detail">
-            <h1 class="translated-title"
-                data-fr="<?= htmlspecialchars($egame['nom']['fr']) ?>"
-                data-en="<?= htmlspecialchars($egame['nom']['en']) ?>"
-                data-de="<?= htmlspecialchars($egame['nom']['de']) ?>">
-                <?= htmlspecialchars($egame['nom']['fr']) ?>
-            </h1>
+            <h2><?= htmlspecialchars($egame['nom']) ?></h2>
 
             <div class="egame-info">
                 <p>

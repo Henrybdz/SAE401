@@ -5,11 +5,7 @@
       foreach($egames as $egame) {
         echo '<a href="index.php?action=egameDetail&id=' . htmlspecialchars($egame['id']) . '" class="egame-card">';
         // Titre traduit
-        echo '<h2 class="translated-title" ' .
-             'data-fr="' . htmlspecialchars($egame['nom']['fr']) . '" ' .
-             'data-en="' . htmlspecialchars($egame['nom']['en']) . '" ' .
-             'data-de="' . htmlspecialchars($egame['nom']['de']) . '">' .
-             htmlspecialchars($egame['nom']['fr']) . '</h2>';
+        echo '<h2>'. htmlspecialchars($egame['nom']) . '</h2>';
         
         echo '<p><strong><span data-translate="duree">Durée</span></strong>: ' . htmlspecialchars($egame['duree']) . ' <span data-translate="heures">heures</span></p>';
         
