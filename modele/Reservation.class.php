@@ -113,4 +113,19 @@ class Reservation extends database {
             throw new Exception("Erreur : " . $e->getMessage());
         }
     }
+
+    public static function supprimerReservationsExpirees() {
+        try {
+            $instance = new self();
+            $currentDateTime = date('Y-m-d H:i:s'); // Obtenir la date et l'heure actuelles
+    
+            // Préparer la requête de suppression
+            $sql = "DELETE FROM reservations WHERE CONCAT(date, ' ', end_time) < ?";
+            $deletedCount = $instance->execReqPrep($sql, [$currentDateTime]);
+
+            return $deletedCount; // Retourner le nombre de lignes supprimées
+        } catch (Exception $e) {
+            throw new Exception("Erreur lors de la suppression des réservations expirées : " . $e->getMessage());
+        }
+    }
 }

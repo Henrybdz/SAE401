@@ -10,3 +10,5 @@ profileImage.addEventListener('click', () => {
         profileHover.style.display = 'flex'; // Afficher
     }
 });
+
+
