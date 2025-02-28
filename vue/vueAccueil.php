@@ -11,8 +11,11 @@
     </div>
     <div class="content-section-2"></div>
     <div class="content-section">
-        <h2 class="content-title">Votre aventure d'évasion en <span class="content-title-span">plein air</span></h2>
-        <p class="content-description">L'événement d'équipe idéal pour les entreprises, les clubs, la famille et les amis</p>
+        <h2 class="content-title">
+            <span data-translate="titrecontent">Votre aventure d'évasion en </span>
+            <span class="content-title-span" data-translate="pleinair">plein air</span>
+        </h2>
+        <p class="content-description" data-translate="descriptioncontent">L'événement d'équipe idéal pour les entreprises, les clubs, la famille et les amis</p>
         <div class="content-container">
             <div class="content-container-item">
                 <div class="content-container-item-stars">
@@ -32,7 +35,7 @@
                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                     </svg>
                 </div>
-                <p>4.7 étoiles sur Google</p>
+                <p data-translate="etoiles">4.7 étoiles sur Google</p>
             </div>
             <div class="content-container-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -41,7 +44,7 @@
                     <line x1="8" y1="2" x2="8" y2="6"></line>
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
-                <p>Changement de réservation flexible</p>
+                <p data-translate="changereservation">Changement de réservation flexible</p>
             </div>
             <div class="content-container-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -50,11 +53,15 @@
                     <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
-                <p>100 000 équipes enthousiastes</p>
+                <p data-translate="equipes">100 000 équipes enthousiastes</p>
             </div>
         </div>
         <div class="map-container">
-            <h2 class="map-container-title">Clique sur ta région ! <br><span class="map-container-span">(Parmis l'Alsace, la Lorraine, et la Franche-Comté)</span></h2>
+            <h2 class="map-container-title">
+                <span data-translate="cliquerregion">Clique sur ta région ! </span>
+                <br>
+                <span class="map-container-span" data-translate="regions">(Parmis l'Alsace, la Lorraine, et la Franche-Comté)</span>
+            </h2>
             <svg class="map"
                 width="596.41547"
                 height="584.5448">
@@ -160,7 +167,10 @@
         </div>
     </div>
     <div class="partenaire-container">
-        <h2 class="partenaire-title">Nous sommes <span class="partenaire-span">partenaire d'expérience</span> de</h2>
+        <h2 class="partenaire-title">
+            <span data-translate="noussommes">Nous sommes </span>
+            <span class="partenaire-span" data-translate="partenaire">partenaire d'expérience</span> 
+            <span data-translate="de">de</span></h2>
         <img src="images/img/partenaire.png" alt="liste des partenaires" class="partenaire-img">
     </div>
 </div>

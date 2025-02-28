@@ -41,7 +41,18 @@
         "mesreservations":"Mes réservations",
         "date":"Date de réservation :",
         "heuredebut":"Heure de début :",
-        "heurefin":"Heure de fin :"
+        "heurefin":"Heure de fin :",
+        "titrecontent":"Votre aventure d'évasion en",
+        "pleinair":"plein air",
+        "descriptioncontent":"L'événement d'équipe idéal pour les entreprises, les clubs, la famille et les amis",
+        "etoiles":"4.7 étoiles sur Google",
+        "changereservation":"Changement de réservation flexible",
+        "equipes":"100 000 équipes enthousiastes",
+        "cliquerregion":"Clique sur ta région !",
+        "regions":"(Parmis l'Alsace, la Lorraine, et la Franche-Comté)",
+        "noussommes":"Nous sommes ",
+        "partenaire":"partenaire d'expérience",
+        "de":"de"
     },
     "en": {
         "accueil": "Home",
@@ -85,7 +96,18 @@
         "mesreservations":"My reservations",
         "date":"Reservation date :",
         "heuredebut":"Start time :",
-        "heurefin":"End time :"
+        "heurefin":"End time :",
+        "titrecontent":"Your escape game in",
+        "pleinair":"outdoor",
+        "descriptioncontent":"The ideal team event for companies, clubs, families and friends",
+        "etoiles":"4.7 stars on Google",
+        "changereservation":"Flexible reservation changes",
+        "equipes":"100 000 enthusiastic teams",
+        "cliquerregion":"Click on your region !",
+        "regions":"(Among Alsace, Lorraine, and Franche-Comté)",
+        "noussommes":"We are ",
+        "partenaire":"partner experience",
+        "de":"of"
     },
     "de": {
         "accueil": "Startseite",
@@ -129,6 +151,17 @@
         "mesreservations":"Meine Reservierungen",
         "date":"Datum der Reservierung :",
         "heuredebut":"Startzeit :",
-        "heurefin":"Endzeit :"
+        "heurefin":"Endzeit :",
+        "titrecontent":"Ihr Escape Game in",
+        "pleinair":"außen",
+        "descriptioncontent":"Das ideale Teamereignis für Unternehmen, Vereine, Familien und Freunde",
+        "etoiles":"4.7 Sterne auf Google",
+        "changereservation":"Reservierung flexibel ändern",
+        "equipes":"100 000 entzuksierte Teams",
+        "cliquerregion":"Klicken Sie auf Ihre Region !",
+        "regions":"(Von Alsace, Lorraine, und Franche-Comté)",
+        "noussommes":"Wir sind ",
+        "partenaire":"Partner-Erlebnis",
+        "de":"von"
     }
 }
