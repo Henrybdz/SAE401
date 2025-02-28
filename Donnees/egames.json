@@ -4,11 +4,11 @@
             "id": 1,
             "nom": "Le Trésor Perdu",
             "duree": 2,
-            "lieu": "Paris",
+            "lieu": "Strasbourg",
             "description": {
-                "fr": "Partez à l'aventure dans les catacombes de Paris à la recherche d'un trésor légendaire !",
-                "en": "Embark on an adventure in the catacombs of Paris in search of a legendary treasure!",
-                "de": "Begeben Sie sich auf ein Abenteuer in den Katakomben von Paris auf der Suche nach einem legendären Schatz!"
+                "fr": "Partez à l'aventure dans les catacombes de Strasbourg à la recherche d'un trésor légendaire !",
+                "en": "Embark on an adventure in the catacombs of Strasbourg in search of a legendary treasure!",
+                "de": "Begeben Sie sich auf ein Abenteuer in den Katakomben von Strasbourg auf der Suche nach einem legendären Schatz!"
             },
             "time_slots": [
                 {
@@ -33,7 +33,7 @@
             "id": 2,
             "nom": "L'Énigme du Laboratoire",
             "duree": 1.5,
-            "lieu": "Lyon",
+            "lieu": "Mulhouse",
             "description": {
                 "fr": "Un virus mortel menace l'humanité. Vous avez 90 minutes pour trouver l'antidote !",
                 "en": "A deadly virus threatens humanity. You have 90 minutes to find the antidote!",
@@ -66,7 +66,7 @@
             "id": 3,
             "nom":"Le Manoir Hanté",
             "duree": 1,
-            "lieu": "Marseille",
+            "lieu": "Colmar",
             "description": {
                 "fr": "Osez pénétrer dans ce manoir hanté et découvrez ses terribles secrets avant qu'il ne soit trop tard !",
                 "en": "Dare to enter this haunted mansion and discover its terrible secrets before it's too late!",
