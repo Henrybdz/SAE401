@@ -45,20 +45,20 @@
             <div class="custom-select">
                 <div class="selected-option">
                     <img src="images/flags/fr.svg" alt="Drapeau français" class="flag-icon">
-                    <span>Français</span>
+                    <span style="display: none;">Français</span>
                 </div>
                 <div class="options">
                     <div class="option" data-value="fr">
                         <img src="images/flags/fr.svg" alt="Drapeau français" class="flag-icon">
-                        <span data-translate="lang_fr">Français</span>
+                        <span style="display: none;" data-translate="lang_fr">Français</span>
                     </div>
                     <div class="option" data-value="en">
                         <img src="images/flags/en.svg" alt="Drapeau anglais" class="flag-icon">
-                        <span data-translate="lang_en">English</span>
+                        <span style="display: none;" data-translate="lang_en">English</span>
                     </div>
                     <div class="option" data-value="de">
                         <img src="images/flags/de.svg" alt="Drapeau allemand" class="flag-icon">
-                        <span data-translate="lang_de">Deutsch</span>
+                        <span style="display: none;" data-translate="lang_de">Deutsch</span>
                     </div>
                 </div>
             </div>
