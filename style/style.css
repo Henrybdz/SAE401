@@ -63,32 +63,72 @@ p {
 header {
   display: flex;
   align-items: center;
-  padding: 6px 20px;
+  justify-content: space-between;
+  padding: 12px 30px;
   background-color: rgba(39, 39, 39, 0.2);
+  backdrop-filter: blur(8px);
   border-radius: 50px;
   margin: 20px;
   color: white;
-  z-index: 30;
+  z-index: 1001;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+header:hover {
+  background-color: rgba(39, 39, 39, 0.3);
 }
 
 .header_title {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #FF9900;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF9900;
+  transition: width 0.3s ease;
+}
+
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Nouveau conteneur pour regrouper register et lang-selector */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .lang-selector {
@@ -97,15 +137,24 @@ nav a {
 }
 
 .lang-selector button {
-  padding: 5px 10px;
-  background-color: #ddd;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .lang-selector button:hover {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.lang-selector button.active {
+  background-color: #FF9900;
+  color: #222;
 }
 
 /* Styles pour la section d'accueil */
@@ -275,6 +324,7 @@ nav a {
 .map-container-span {
   font-size: 18px;
 }
+
 .map {
   width: 100%;
   height: auto;
@@ -321,6 +371,7 @@ nav a {
   width: 40%;
   height: auto;
 }
+
 /* Styles pour le système de compte */
 .compte {
   position: relative;
@@ -392,12 +443,13 @@ nav a {
 
 .auth-buttons {
   display: flex;
+  width: 164px;
   gap: 10px;
 }
 
 .login-btn,
 .register-btn {
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -408,7 +460,10 @@ nav a {
 }
 
 .register-btn {
-  background: #28a745;
+  background: #d88200;
+  border-radius: 50px;
+  width: 100%;
+  text-align: center;
   color: white;
 }
 

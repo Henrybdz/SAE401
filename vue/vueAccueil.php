@@ -12,7 +12,7 @@
     <div class="content-section-2"></div>
     <div class="content-section">
         <h2 class="content-title">
-            <span data-translate="titrecontent">Votre aventure d'évasion en </span>
+            <span data-translate="titrecontent">Votre aventure d'évasion en </span><br>
             <span class="content-title-span" data-translate="pleinair">plein air</span>
         </h2>
         <p class="content-description" data-translate="descriptioncontent">L'événement d'équipe idéal pour les entreprises, les clubs, la famille et les amis</p>
