@@ -34,7 +34,9 @@
                                 <a href="index.php?action=profile" class="profile-link" data-translate='voirprofil'>Voir le profil</a>
                             </div>
                         </div>
-                        <a href="index.php?action=logout" class="logout-btn" data-translate='deconnexion'>Déconnexion</a>
+                        <a href="index.php?action=logout" class="logout-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d88200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3" />
+                            </svg></a>
                     </div>
                 <?php else: ?>
                     <div class="auth-buttons">
