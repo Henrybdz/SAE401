@@ -70,6 +70,7 @@
     <footer>
         <?= $footer ?>
     </footer>
+    <script src="script/general.js"></script>
 </body>
 
 </html>

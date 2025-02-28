@@ -299,11 +299,10 @@ nav a {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: none;
   min-width: 150px;
-  z-index: 1000;
+  z-index: 2000;
 }
 
-.profile-image-wrapper:hover .profile-hover {
-  display: flex;
+.profile-image-wrapper .profile-hover {
   flex-direction: column;
   gap: 8px;
 }
@@ -318,6 +317,7 @@ nav a {
   text-decoration: none;
   padding: 5px;
   border-radius: 4px;
+  z-index: 2000;
 }
 
 .profile-link:hover {
