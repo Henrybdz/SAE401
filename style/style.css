@@ -257,13 +257,35 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #FF9900;
 }
 
+.map-container-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.map-container-span {
+  font-size: 18px;
+}
 .map {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   fill: white;
   stroke: black;
   stroke-width: 1;
-  transform: translateX(-20%);
+}
+
+.map path {
+  transition: fill 0.3s ease;
+}
+
+.map path:hover {
+  fill: #FF9900;
+  cursor: pointer;
 }
 
 /* Styles pour le système de compte */
@@ -569,4 +591,67 @@ nav a {
 
 .back-button:hover {
   background-color: #0056b3;
+}
+
+/* Styles pour le détail de la région */
+.region-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.region-detail.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.region-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.region-detail-header h3 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.region-detail-content {
+  width: 80%;
+  max-width: 800px;
+  height: 70%;
+  background: rgba(34, 41, 31, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.region-svg {
+  width: 100%;
+  height: 100%;
 }
