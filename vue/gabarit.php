@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="style/profil.css">
     <link rel="stylesheet" href="style/reservation.css">
     <script src="script/traduction.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <p class="header_title">We Escape</p>
         <nav>
             <a href='index.php' data-translate='accueil'>Accueil</a>
             <a href='index.php?action=egames' data-translate='egames'>Escape Games</a>
             <a href='index.php?action=contact' data-translate='contact'>Contact</a>
         </nav>
         <div class="compte">
-            <?php if(isset($_SESSION['user'])): ?>
+            <?php if (isset($_SESSION['user'])): ?>
                 <div class="profile-container">
                     <div class="profile-image-wrapper">
                         <img src="images/profils/<?= htmlspecialchars($_SESSION['user']['photo_profil']) ?>" alt="Photo de profil" class="profile-image">
@@ -33,7 +37,6 @@
                 </div>
             <?php else: ?>
                 <div class="auth-buttons">
-                    <a href="index.php?action=login" class="login-btn" data-translate='connexion'>Connexion</a>
                     <a href="index.php?action=register" class="register-btn" data-translate='inscription'>Inscription</a>
                 </div>
             <?php endif; ?>
