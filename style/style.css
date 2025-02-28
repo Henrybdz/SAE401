@@ -192,6 +192,10 @@ nav a {
   background-color: #283024;
   z-index: 29;
   padding: 20px;
+  background-image: url(../images/img/background_labyrinthe.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 0 15%;
 }
 
 .content-title {
@@ -250,6 +254,7 @@ nav a {
   max-width: 1000px;
   margin-inline: auto;
   margin-top: 40px;
+  margin-bottom: 60px;
   background: rgba(34, 41, 31, 0.4);
   border-radius: 67px;
   padding: 40px;
@@ -288,6 +293,34 @@ nav a {
   cursor: pointer;
 }
 
+.partenaire-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #22291F;
+  width: 100%;
+  margin-inline: auto;
+  text-transform: uppercase;
+  color: white;
+  padding-block: 40px;
+}
+
+.partenaire-title {
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 400px;
+  text-align: center;
+}
+
+.partenaire-span {
+  color: #FF9900;
+}
+
+.partenaire-img {
+  width: 40%;
+  height: auto;
+}
 /* Styles pour le système de compte */
 .compte {
   position: relative;

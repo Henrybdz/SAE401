@@ -159,6 +159,10 @@
             </div>
         </div>
     </div>
+    <div class="partenaire-container">
+        <h2 class="partenaire-title">Nous sommes <span class="partenaire-span">partenaire d'expérience</span> de</h2>
+        <img src="images/img/partenaire.png" alt="liste des partenaires" class="partenaire-img">
+    </div>
 </div>
 
 <script src="script/carte.js"></script>
