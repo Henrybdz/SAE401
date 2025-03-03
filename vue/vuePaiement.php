@@ -50,7 +50,7 @@
                         <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
                     </div>
                     <div class="form-group">
-                        <label for="cvv" data-translate="cvv">CVV</label>
+                        <label for="cvv" data-translate="cvv">CVC</label>
                         <input type="text" id="cvv" maxlength="3" required>
                     </div>
                 </div>
