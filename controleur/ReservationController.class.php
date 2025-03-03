@@ -17,10 +17,13 @@ class ReservationController extends database {
         }
         
         if (!isset($_SESSION['user']) || !isset($_SESSION['user']['id'])) {
-            $this->sendJsonResponse([
+            /*$this->sendJsonResponse([
                 'success' => false,
                 'message' => 'auth_required'
-            ], 401);
+            ], 401);*/
+            $currentUrl = urlencode($_SERVER['REQUEST_URI']);
+            header("Location: index.php?action=login&redirect=" . $currentUrl);
+            exit();
         }
         return $_SESSION['user']['id'];
     }
@@ -130,5 +133,14 @@ class ReservationController extends database {
                 'message' => $e->getMessage()
             ], 500);
         }
+    }
+
+    public function afficherPaiement() {
+        // Vérifier si l'utilisateur est connecté
+        $user_id = $this->checkAuth();
+        
+        // Inclure la vue de paiement
+        $page = new Vue("Paiement");
+        $page->afficher(array());
     }
 }

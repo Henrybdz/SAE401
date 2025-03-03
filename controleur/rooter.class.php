@@ -82,6 +82,9 @@ class Rooter {
                 case "update-profile-picture":
                     $this->ctlAuth->updateProfilePicture();
                     break;
+                case "paiement":
+                    $this->ctlReservation->afficherPaiement();
+                    break;
                 default:
                     throw new Exception("Action non valide");
             }

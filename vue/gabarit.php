@@ -75,7 +75,7 @@
         <div class="footer-container">
             <div class="footer-logo-section">
                 <img src="images/img/logo_footer.png" alt="Logo We Escape" class="footer-logo"  >
-                <div class="footer-tagline">L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE</div>
+                <div class="footer-tagline" data-translate="tagline">L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE</div>
 
                 <div class="footer-contact">
                     <div class="footer-contact-item">
@@ -117,7 +117,7 @@
 
             <div class="footer-links-section">
                 <div class="footer-links-column">
-                    <h3 class="footer-links-title">POURSUIVRE</h3>
+                    <h3 class="footer-links-title" data-translate="suivre">POURSUIVRE</h3>
                     <div class="footer-links">
                         <a href="#" data-translate="apropos">À propos de nous</a>
                         <a href="#" data-translate="blog">Blog</a>
@@ -129,7 +129,7 @@
                 </div>
 
                 <div class="footer-links-column">
-                    <h3 class="footer-links-title">INFORMATIONS</h3>
+                    <h3 class="footer-links-title" data-translate="informations">INFORMATIONS</h3>
                     <div class="footer-links">
                         <a href="#" data-translate="emplois">Emplois / Carrières</a>
                         <a href="#" data-translate="faq">FAQ</a>

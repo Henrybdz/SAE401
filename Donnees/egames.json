@@ -106,6 +106,206 @@
                     "end_time": "18:00"
                 }
             ]
+        },
+        {
+            "id": 4,
+            "nom": "Les Secrets de la Fromagerie",
+            "duree": 1.5,
+            "lieu": "Munster",
+            "description": {
+                "fr": "Découvrez les mystères ancestraux de la fabrication du Munster dans une ancienne fromagerie !",
+                "en": "Discover the ancestral mysteries of Munster cheese making in an old cheese factory!",
+                "de": "Entdecken Sie die uralten Geheimnisse der Münsterkäseherstellung in einer alten Käserei!"
+            },
+            "time_slots": [
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
+            ]
+        },{
+            "id": 5,
+            "nom": "L'Auberge Mystérieuse",
+            "duree": 1,
+            "lieu": "Le Bonhomme",
+            "description": {
+                "fr": "Une vieille auberge alsacienne cache un secret vieux de plusieurs siècles. Saurez-vous le percer ?",
+                "en": "An old Alsatian inn hides a centuries-old secret. Can you uncover it?",
+                "de": "Ein altes elsässisches Gasthaus verbirgt ein jahrhundertealtes Geheimnis. Können Sie es lüften?"
+            },
+            "time_slots": [
+                {"start_time": "09:00","end_time": "10:00"},
+                {"start_time": "10:00","end_time": "11:00"},
+                {"start_time": "11:00","end_time": "12:00"},
+                {"start_time": "13:00","end_time": "14:00"},
+                {"start_time": "14:00","end_time": "15:00"},
+                {"start_time": "16:00","end_time": "17:00"},
+                {"start_time": "17:00","end_time": "18:00"}
+            ]
+        },
+        {
+            "id": 6,
+            "nom": "Le Camp de la Résistance",
+            "duree": 2,
+            "lieu": "Schirmeck",
+            "description": {
+                "fr": "Plongez dans l'histoire de la Résistance et déchiffrez les messages codés avant qu'il ne soit trop tard !",
+                "en": "Dive into the history of the Resistance and decipher coded messages before it's too late!",
+                "de": "Tauchen Sie ein in die Geschichte des Widerstands und entschlüsseln Sie codierte Nachrichten, bevor es zu spät ist!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "11:00"},
+                {"start_time": "11:00", "end_time": "13:00"},
+                {"start_time": "14:00", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "18:00"}
+            ]
+        },
+        {
+            "id": 7,
+            "nom": "Le Château des Rohan",
+            "duree": 1.5,
+            "lieu": "Saverne",
+            "description": {
+                "fr": "Explorez les secrets du château des Rohan et découvrez le trésor des cardinaux !",
+                "en": "Explore the secrets of the Rohan Castle and discover the cardinals' treasure!",
+                "de": "Erkunden Sie die Geheimnisse des Rohan-Schlosses und entdecken Sie den Schatz der Kardinäle!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "10:30"},
+                {"start_time": "10:30", "end_time": "12:00"},
+                {"start_time": "13:00", "end_time": "14:30"},
+                {"start_time": "14:30", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "17:30"}
+            ]
+        },
+        {
+            "id": 8,
+            "nom": "L'Opération Dragon",
+            "duree": 1.5,
+            "lieu": "Metz",
+            "description": {
+                "fr": "Infiltrez-vous dans une base secrète et déjouez un complot international !",
+                "en": "Infiltrate a secret base and foil an international plot!",
+                "de": "Infiltrieren Sie einen geheimen Stützpunkt und vereiteln Sie eine internationale Verschwörung!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "10:30"},
+                {"start_time": "10:30", "end_time": "12:00"},
+                {"start_time": "13:00", "end_time": "14:30"},
+                {"start_time": "14:30", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "17:30"}
+            ]
+        },
+        {
+            "id": 9,
+            "nom": "L'École de Magie",
+            "duree": 2,
+            "lieu": "Nancy",
+            "description": {
+                "fr": "Entrez dans une mystérieuse école de magie et résolvez les énigmes pour devenir un véritable sorcier !",
+                "en": "Enter a mysterious school of magic and solve riddles to become a true wizard!",
+                "de": "Betreten Sie eine mysteriöse Zauberschule und lösen Sie Rätsel, um ein echter Zauberer zu werden!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "11:00"},
+                {"start_time": "11:00", "end_time": "13:00"},
+                {"start_time": "14:00", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "18:00"}
+            ]
+        },
+        {
+            "id": 10,
+            "nom": "La Fabrique d'Images",
+            "duree": 1,
+            "lieu": "Epinal",
+            "description": {
+                "fr": "Percez les secrets de l'imagerie d'Épinal dans cet escape game artistique !",
+                "en": "Uncover the secrets of Épinal imagery in this artistic escape game!",
+                "de": "Entdecken Sie die Geheimnisse der Épinal-Bilderwelt in diesem künstlerischen Escape-Game!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "10:00"},
+                {"start_time": "10:00", "end_time": "11:00"},
+                {"start_time": "11:00", "end_time": "12:00"},
+                {"start_time": "13:00", "end_time": "14:00"},
+                {"start_time": "14:00", "end_time": "15:00"},
+                {"start_time": "15:00", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "17:00"},
+                {"start_time": "17:00", "end_time": "18:00"}
+            ]
+        },
+        {
+            "id": 11,
+            "nom": "L'Horloge Astronomique",
+            "duree": 1.5,
+            "lieu": "Besancon",
+            "description": {
+                "fr": "Remontez le temps dans l'univers de l'horlogerie bisontine !",
+                "en": "Travel back in time in the universe of Besançon watchmaking!",
+                "de": "Reisen Sie zurück in der Zeit in die Welt der Uhrmacherkunst von Besançon!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "10:30"},
+                {"start_time": "10:30", "end_time": "12:00"},
+                {"start_time": "13:00", "end_time": "14:30"},
+                {"start_time": "14:30", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "17:30"}
+            ]
+        },
+        {
+            "id": 12,
+            "nom": "Le Laboratoire de Pasteur",
+            "duree": 1,
+            "lieu": "Dole",
+            "description": {
+                "fr": "Reconstituez les découvertes de Louis Pasteur dans son laboratoire reconstitué !",
+                "en": "Recreate Louis Pasteur's discoveries in his reconstructed laboratory!",
+                "de": "Rekonstruieren Sie Louis Pasteurs Entdeckungen in seinem nachgebildeten Labor!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "10:00"},
+                {"start_time": "10:00", "end_time": "11:00"},
+                {"start_time": "11:00", "end_time": "12:00"},
+                {"start_time": "13:00", "end_time": "14:00"},
+                {"start_time": "14:00", "end_time": "15:00"},
+                {"start_time": "15:00", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "17:00"},
+                {"start_time": "17:00", "end_time": "18:00"}
+            ]
+        },
+        {
+            "id": 13,
+            "nom": "La Citadelle Assiégée",
+            "duree": 2,
+            "lieu": "Belfort",
+            "description": {
+                "fr": "Défendez la citadelle de Belfort contre l'envahisseur dans cette aventure historique !",
+                "en": "Defend the Belfort citadel against the invader in this historical adventure!",
+                "de": "Verteidigen Sie die Zitadelle von Belfort gegen den Eindringling in diesem historischen Abenteuer!"
+            },
+            "time_slots": [
+                {"start_time": "09:00", "end_time": "11:00"},
+                {"start_time": "11:00", "end_time": "13:00"},
+                {"start_time": "14:00", "end_time": "16:00"},
+                {"start_time": "16:00", "end_time": "18:00"}
+            ]
         }
+
     ]
 }

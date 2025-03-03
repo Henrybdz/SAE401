@@ -38,7 +38,7 @@
                 <div id="calendar-container">
                     <input type="text" id="date-picker" placeholder="Choisissez une date" />
                 </div>
-                
+
                 <div id="time-slots-container" style="display: none;">
                     <h3 data-translate="creneaux">Créneaux disponibles</h3>
                     <div id="time-slots-list"></div>
@@ -48,8 +48,28 @@
                 <div id="reservation-form" style="display: none;">
                     <h3 data-translate="reservation_details">Détails de la réservation</h3>
                     <div id="reservation-summary">
-                        <div class="reservation-summary-date"><p data-translate="selected_date">Date sélectionnée : </p> <p id="selected-date"></p></div>
-                        <div class="reservation-summary-time"><p data-translate="selected_time">Horaire sélectionné : </p><p id="selected-time"></p></div>
+                        <div class="reservation-summary-date">
+                            <p data-translate="selected_date">Date sélectionnée : </p>
+                            <p id="selected-date"></p>
+                        </div>
+                        <div class="reservation-summary-time">
+                            <p data-translate="selected_time">Horaire sélectionné : </p>
+                            <p id="selected-time"></p>
+                        </div>
+                    </div>
+                    <div class="participants-selector">
+                        <h4 data-translate="nb_participants">Nombre de participants</h4>
+                        <select id="nb-participants" class="form-control">
+                            <option value="2" data-translate="deuxpersonnes">2 personnes - 30€/pers</option>
+                            <option value="3" data-translate="troispersonnes">3 personnes - 25€/pers</option>
+                            <option value="4" data-translate="quatrepersonnes">4 personnes - 22€/pers</option>
+                            <option value="5" data-translate="cinqpersonnes">5 personnes - 20€/pers</option>
+                            <option value="6" data-translate="sixpersonnes">6 personnes - 18€/pers</option>
+                        </select>
+                        <p class="total-price">
+                            <span data-translate="total_price">Prix total :</span>
+                            <span id="total-price">60€</span>
+                        </p>
                     </div>
                     <button id="confirm-reservation" class="btn-primary" data-translate="confirm_reservation">
                         Confirmer la réservation
