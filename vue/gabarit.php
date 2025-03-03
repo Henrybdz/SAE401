@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/translation.css">
     <link rel="stylesheet" href="style/profil.css">
     <link rel="stylesheet" href="style/reservation.css">
+    <link rel="stylesheet" href="style/escapegames.css">
     <script src="script/traduction.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

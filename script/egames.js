@@ -22,4 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const savedLang = localStorage.getItem('selectedLang') || 'fr';
         updateTranslatedTexts(savedLang);
     }
+
+
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY;
+
+        // Éléments à animer
+        const mountains = document.querySelector('.e-bg-mountains');
+        const title = document.querySelector('.e-hero-title');
+        const cloud = document.querySelector('.e-bg-cloud');
+        const cloud1 = document.querySelector('.e-bg-cloud-1');
+
+        // Vitesses différentes pour chaque élément (effet parallaxe)
+        mountains.style.transform = `translateY(${scrollPosition * 0.1}px)`;
+        title.style.transform = `translate(-50%, -50%) translateY(${scrollPosition * 0.2}px)`;
+        cloud.style.transform = `translateY(${-scrollPosition * 0.7}px)`;
+        cloud1.style.transform = `translateY(${-scrollPosition * 0.7}px)`;
+    });
 });
