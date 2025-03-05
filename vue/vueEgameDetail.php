@@ -1,7 +1,18 @@
 <!-- Ajout des dépendances pour le calendrier -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<link rel="stylesheet" href="style/reservation.css">
+<link rel="stylesheet" href="style/egamedetail.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<div class="hero-section">
+  <div class="ed-background-images">
+    <img src="<?=htmlspecialchars($egame['image'])?>" alt="<?=htmlspecialchars($egame['nom'])?>" class="ed-bg-mountains">
+    <h2 class="ed-hero-title"><?= htmlspecialchars($egame['nom']) ?></h2>
+    <img src="images/img/cloud.png" alt="Nuage" class="ed-bg-cloud">
+    <img src="images/img/cloud.png" alt="Nuage" class="ed-bg-cloud-1">
+  </div>
+</div>
+<div class="content-section-2"></div>
+
 
 <div class="egame-detail-container">
     <?php if (isset($egame)): ?>
@@ -36,7 +47,7 @@
             <!-- Section pour le calendrier et les réservations -->
             <div id="reservation-container">
                 <div id="calendar-container">
-                    <input type="text" id="date-picker" placeholder="Choisissez une date" />
+                    <div id="date-picker"></div>
                 </div>
 
                 <div id="time-slots-container" style="display: none;">

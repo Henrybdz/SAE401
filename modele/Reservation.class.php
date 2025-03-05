@@ -72,7 +72,7 @@ class Reservation extends database {
         }
     }
 
-    public static function getUserReservations($user_id) {
+    public function getUserReservations($user_id) {
         try {
             $instance = new self();
             $query = "SELECT r.egame_id,r.date, r.start_time, r.end_time 
@@ -114,7 +114,7 @@ class Reservation extends database {
         }
     }
 
-    public static function supprimerReservationsExpirees() {
+    public function supprimerReservationsExpirees() {
         try {
             $instance = new self();
             $currentDateTime = date('Y-m-d H:i:s'); // Obtenir la date et l'heure actuelles

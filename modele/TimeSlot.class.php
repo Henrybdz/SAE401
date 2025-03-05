@@ -17,7 +17,7 @@ class TimeSlot extends database {
         $this->is_available = $is_available;
     }
 
-    public static function getAvailableTimeSlots($date, $egame_id) {
+    public function getAvailableTimeSlots($date, $egame_id) {
         try {
             $instance = new self();
             
@@ -105,12 +105,12 @@ class TimeSlot extends database {
         }
     }
 
-    public static function markAsUnavailable($slot_id) {
+    public function markAsUnavailable($slot_id) {
         // Cette méthode n'est plus nécessaire car nous gérons la disponibilité via les réservations
         return true;
     }
 
-    public static function isSlotAvailable($slot_id) {
+    public function isSlotAvailable($slot_id) {
         try {
             $instance = new self();
             
@@ -132,7 +132,7 @@ class TimeSlot extends database {
         }
     }
 
-    public static function generateTimeSlotsForDays($egame_id, $days = 7, $start_hour = 10, $end_hour = 20, $duration_minutes = 90) {
+    public function generateTimeSlotsForDays($egame_id, $days = 7, $start_hour = 10, $end_hour = 20, $duration_minutes = 90) {
         try {
             $instance = new self();
             $success = true;
