@@ -40,7 +40,8 @@ class ReservationController extends database {
             $date = $_GET['date'];
             $egame_id = $_GET['egame_id'];
 
-            $timeSlots = TimeSlot::getAvailableTimeSlots($date, $egame_id);
+            $timeSlots = new TimeSlot($date, $egame_id);
+            $timeSlots = $timeSlots->getAvailableTimeSlots($date, $egame_id);
             
             if (empty($timeSlots)) {
                 $this->sendJsonResponse([

@@ -34,12 +34,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const savedLang = localStorage.getItem('selectedLang') || 'fr';
         updateTranslatedTexts(savedLang);
     }
+
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY;
+
+        // Éléments à animer
+        const mountains = document.querySelector('.ed-bg-mountains');
+        const title = document.querySelector('.ed-hero-title');
+        const cloud = document.querySelector('.ed-bg-cloud');
+        const cloud1 = document.querySelector('.ed-bg-cloud-1');
+
+        // Vitesses différentes pour chaque élément (effet parallaxe)
+        mountains.style.transform = `translateY(${scrollPosition * 0.1}px)`;
+        title.style.transform = `translate(-50%, -50%) translateY(${scrollPosition * 0.2}px)`;
+        cloud.style.transform = `translateY(${-scrollPosition * 0.7}px)`;
+        cloud1.style.transform = `translateY(${-scrollPosition * 0.7}px)`;
+    });
 });
 
 // Configuration du calendrier avec Flatpickr
 flatpickr('#date-picker', {
     dateFormat: 'Y-m-d',
     minDate: new Date().fp_incr(1),
+    inline: true, // Calendrier toujours visible
+    showMonths: 1,
+    altFormat: "F Y",
+    altInput: true,
+    monthSelectorType: "static",
     onChange: function (selectedDates, dateStr) {
         fetchTimeSlots(dateStr);
     }
