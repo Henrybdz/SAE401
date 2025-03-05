@@ -35,7 +35,7 @@
           'data-fr="' . htmlspecialchars($egame['Region']['fr']) . '" ' .
           'data-en="' . htmlspecialchars($egame['Region']['en']) . '" ' .
           'data-de="' . htmlspecialchars($egame['Region']['de']) . '">' .
-          htmlspecialchars($egame['Region']['fr']) . '</span> |
+          htmlspecialchars($egame['Region']['fr']) . '</span> <br>
           <span data-translate="lieu">Lieu</span></strong>: ' . htmlspecialchars($egame['lieu']) . '</p>';
 
         echo '<p><span data-translate="duree">Durée</span>: ' . htmlspecialchars($egame['duree']) . ' <span data-translate="heures">heures</span></p>';
