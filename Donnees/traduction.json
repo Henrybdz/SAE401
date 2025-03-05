@@ -90,7 +90,10 @@
         "alsace":"ALSACE",
         "lorraine":"LORRAINE",
         "franche-comte":"FRANCHE-COMTE",
-        "aventure":"À L'AVENTURE"
+        "aventure":"À L'AVENTURE",
+        "seminaire":"CES ENTREPRISES ONT CÉLÉBRÉ LEUR",
+        "seminaireevasion":"AVENTURE D'ÉVASION D'ENTREPRISE",
+        "avec":"AVEC NOUS"
     },
     "en": {
         "accueil": "Home",
@@ -183,7 +186,10 @@
         "alsace":"ALSACE",
         "lorraine":"LORRAINE",
         "franche-comte":"FRANCHE-COMTE",
-        "aventure":"TO ADVENTURE"
+        "aventure":"TO ADVENTURE",
+        "seminaire":"THESE COMPANIES CELEBRATED THEIR",
+        "seminaireevasion":"CORPORATE ESCAPE ADVENTURE",
+        "avec":"WITH US"
     },
     "de": {
         "accueil": "Startseite",
@@ -276,6 +282,9 @@
         "alsace":"ELSASS",
         "lorraine":"LOTHRINGEN",
         "franche-comte":"FRANCHE-COMTE",
-        "aventure":"ZUM ABENTEUER"
+        "aventure":"ZUM ABENTEUER",
+        "seminaire":"DIESEN UNTERNEHMEN FEIERN IHR",
+        "seminaireevasion":"CORPORATE ESCAPE ADVENTURE",
+        "avec":"MIT UNS"
     }
 }
