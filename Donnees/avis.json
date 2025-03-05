@@ -1,0 +1,22 @@
+{
+    "avis": [
+        {
+            "titre": "Une expérience incroyable !",
+            "texte": "Nous avons passé un moment extraordinaire avec notre équipe. Les énigmes étaient bien pensées et l'ambiance était parfaite.",
+            "auteur": "Marie D.",
+            "note": 5
+        },
+        {
+            "titre": "Team building réussi",
+            "texte": "Excellente activité pour renforcer l'esprit d'équipe. Tout le monde a adoré et participé activement.",
+            "auteur": "Thomas L.",
+            "note": 5
+        },
+        {
+            "titre": "À recommander absolument",
+            "texte": "Une organisation au top, des énigmes originales et un accueil chaleureux. Nous reviendrons !",
+            "auteur": "Sophie M.",
+            "note": 4
+        }
+    ]
+}

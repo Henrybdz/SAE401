@@ -51,7 +51,7 @@ header:hover {
   background-color: rgba(39, 39, 39, 0.3);
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,7 +330,7 @@ nav a:hover::after {
   margin-inline: auto;
   text-transform: uppercase;
   color: white;
-  padding-block: 40px;
+  padding-block: 60px;
 }
 
 .partenaire-title {
@@ -348,6 +348,179 @@ nav a:hover::after {
   width: 40%;
   height: auto;
 }
+
+.avis-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: #22291F;
+}
+
+.avis-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avis-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  z-index: 1;
+  background: rgba(34, 41, 31, 0.8);
+  padding-block: 60px;
+}
+
+.avis-title {
+  max-width: 1000px;
+  margin-inline: auto;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.avis-text {
+  max-width: 1000px;
+  margin-inline: auto;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.avis-author {
+  max-width: 100px;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.avis-rating {
+  max-width: 1000px;
+  display: flex;
+  gap: 5px;
+  color: #FF9900;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 600px;
+  margin-inline: auto;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  position: relative;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn.prev {
+  left: 20px;
+}
+
+.carousel-btn.next {
+  right: 20px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: white;
+}
+
+.seminaire-container {
+  position: relative;
+  width: 100%;
+  background: #22291F;
+}
+
+.seminaire-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  height: 600px;
+  background: rgba(34, 41, 31, 1);
+}
+
+.seminaire-title {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.seminaire-title span {
+  color: #FF9900;
+}
+
+.seminaire-item {
+  flex: 0 0 20%;
+  padding: 0 20px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.seminaire-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+  
 
 /* Styles pour le système de compte */
 .compte {

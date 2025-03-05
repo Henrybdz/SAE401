@@ -19,7 +19,7 @@
 <body>
     <header>
         <a href="index.php" class="logo"><img src="images/img/logo_footer.png" alt="Logo We Escape" class="header_title"></a>
-        <nav>   
+        <nav>
             <a href='index.php' data-translate='accueil'>Accueil</a>
             <a href='index.php?action=egames' data-translate='egames'>Escape Games</a>
             <a href='index.php?action=contact' data-translate='contact'>Contact</a>
@@ -75,7 +75,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo-section">
-                <img src="images/img/logo_footer.png" alt="Logo We Escape" class="footer-logo"  >
+                <img src="images/img/logo_footer.png" alt="Logo We Escape" class="footer-logo">
                 <div class="footer-tagline" data-translate="tagline">L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE</div>
 
                 <div class="footer-contact">
