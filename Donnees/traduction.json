@@ -84,7 +84,13 @@
         "faq":"FAQ",
         "cadeaux":"Bons cadeaux",
         "team":"L'événement d'équipe parfait & Team Building",
-        "escape":"Escape Room en plein air"
+        "escape":"Escape Room en plein air",
+        "region":"Région",
+        "decouvrer":"Découvrez les différents",
+        "alsace":"ALSACE",
+        "lorraine":"LORRAINE",
+        "franche-comte":"FRANCHE-COMTE",
+        "aventure":"À L'AVENTURE"
     },
     "en": {
         "accueil": "Home",
@@ -171,7 +177,13 @@
         "faq":"FAQ",
         "cadeaux":"Gifts",
         "team":"The perfect team event & Team Building",
-        "escape":"Outdoor Escape Room"
+        "escape":"Outdoor Escape Room",
+        "region":"Region",
+        "decouvrer":"Discover the different",
+        "alsace":"ALSACE",
+        "lorraine":"LORRAINE",
+        "franche-comte":"FRANCHE-COMTE",
+        "aventure":"TO ADVENTURE"
     },
     "de": {
         "accueil": "Startseite",
@@ -258,6 +270,12 @@
         "faq":"FAQ",
         "cadeaux":"Geschenke",
         "team":"Das perfekte Teamereignis & Teambuilding",
-        "escape":"Außen-Escape Room"
+        "escape":"Außen-Escape Room",
+        "region":"Region",
+        "decouvrer":"Entdecken Sie verschiedene",
+        "alsace":"ELSASS",
+        "lorraine":"LOTHRINGEN",
+        "franche-comte":"FRANCHE-COMTE",
+        "aventure":"ZUM ABENTEUER"
     }
 }

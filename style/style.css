@@ -51,11 +51,15 @@ header:hover {
   background-color: rgba(39, 39, 39, 0.3);
 }
 
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header_title {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  width: 150px;
+  height: auto;
 }
 
 nav {

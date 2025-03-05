@@ -11,23 +11,17 @@
                 "de": "Begeben Sie sich auf ein Abenteuer in den Katakomben von Strasbourg auf der Suche nach einem legendären Schatz!"
             },
             "time_slots": [
-                {
-                    "start_time": "09:00",
-                    "end_time": "11:00"
-                },
-                {
-                    "start_time": "11:00",
-                    "end_time": "13:00"
-                },
-                {
-                    "start_time": "14:00",
-                    "end_time": "16:00"
-                },
-                {
-                    "start_time": "16:00",
-                    "end_time": "18:00"
-                }
-            ]
+                {"start_time": "09:00","end_time": "11:00"},
+                {"start_time": "11:00","end_time": "13:00"},
+                {"start_time": "14:00","end_time": "16:00"},
+                {"start_time": "16:00","end_time": "18:00"}
+            ],
+            "image": "images/egames/egame1.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },
         {
             "id": 2,
@@ -40,27 +34,18 @@
                 "de": "Ein tödliches Virus bedroht die Menschheit. Sie haben 90 Minuten Zeit, das Gegenmittel zu finden!"
             },
             "time_slots": [
-                {
-                    "start_time": "09:00",
-                    "end_time": "10:30"
-                },
-                {
-                    "start_time": "10:30",
-                    "end_time": "12:00"
-                },
-                {
-                    "start_time": "13:00",
-                    "end_time": "14:30"
-                },
-                {
-                    "start_time": "14:30",
-                    "end_time": "16:00"
-                },
-                {
-                    "start_time": "16:00",
-                    "end_time": "17:30"
-                }
-            ]
+                {"start_time": "09:00","end_time": "10:30"},
+                {"start_time": "10:30","end_time": "12:00"},
+                {"start_time": "13:00","end_time": "14:30"},
+                {"start_time": "14:30","end_time": "16:00"},
+                {"start_time": "16:00","end_time": "17:30"}
+            ],
+            "image": "images/egames/egame2.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },
         {
             "id": 3,
@@ -73,39 +58,21 @@
                 "de": "Wagen Sie es, dieses Spukhaus zu betreten und entdecken Sie seine schrecklichen Geheimnisse, bevor es zu spät ist!"
             },
             "time_slots": [
-                {
-                    "start_time": "09:00",
-                    "end_time": "10:00"
-                },
-                {
-                    "start_time": "10:00",
-                    "end_time": "11:00"
-                },
-                {
-                    "start_time": "11:00",
-                    "end_time": "12:00"
-                },
-                {
-                    "start_time": "13:00",
-                    "end_time": "14:00"
-                },
-                {
-                    "start_time": "14:00",
-                    "end_time": "15:00"
-                },
-                {
-                    "start_time": "15:00",
-                    "end_time": "16:00"
-                },
-                {
-                    "start_time": "16:00",
-                    "end_time": "17:00"
-                },
-                {
-                    "start_time": "17:00",
-                    "end_time": "18:00"
-                }
-            ]
+                {"start_time": "09:00","end_time": "10:00"},
+                {"start_time": "10:00","end_time": "11:00"},
+                {"start_time": "11:00","end_time": "12:00"},
+                {"start_time": "13:00","end_time": "14:00"},
+                {"start_time": "14:00","end_time": "15:00"},
+                {"start_time": "15:00","end_time": "16:00"},
+                {"start_time": "16:00","end_time": "17:00"},
+                {"start_time": "17:00","end_time": "18:00"}
+            ],
+            "image": "images/egames/egame3.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },
         {
             "id": 4,
@@ -118,27 +85,18 @@
                 "de": "Entdecken Sie die uralten Geheimnisse der Münsterkäseherstellung in einer alten Käserei!"
             },
             "time_slots": [
-                {
-                    "start_time": "09:00",
-                    "end_time": "10:30"
-                },
-                {
-                    "start_time": "10:30",
-                    "end_time": "12:00"
-                },
-                {
-                    "start_time": "13:00",
-                    "end_time": "14:30"
-                },
-                {
-                    "start_time": "14:30",
-                    "end_time": "16:00"
-                },
-                {
-                    "start_time": "16:00",
-                    "end_time": "17:30"
-                }
-            ]
+                {"start_time": "09:00","end_time": "10:30"},
+                {"start_time": "10:30","end_time": "12:00"},
+                {"start_time": "13:00","end_time": "14:30"},
+                {"start_time": "14:30","end_time": "16:00"},
+                {"start_time": "16:00","end_time": "17:30"}
+            ],
+            "image": "images/egames/egame4.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },{
             "id": 5,
             "nom": "L'Auberge Mystérieuse",
@@ -157,7 +115,13 @@
                 {"start_time": "14:00","end_time": "15:00"},
                 {"start_time": "16:00","end_time": "17:00"},
                 {"start_time": "17:00","end_time": "18:00"}
-            ]
+            ],
+            "image": "images/egames/egame5.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },
         {
             "id": 6,
@@ -174,11 +138,17 @@
                 {"start_time": "11:00", "end_time": "13:00"},
                 {"start_time": "14:00", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "18:00"}
-            ]
+            ],
+            "image": "images/egames/egame6.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },
         {
             "id": 7,
-            "nom": "Le Château des Rohan",
+            "nom": "Le Chateau des Rohan",
             "duree": 1.5,
             "lieu": "Saverne",
             "description": {
@@ -192,7 +162,13 @@
                 {"start_time": "13:00", "end_time": "14:30"},
                 {"start_time": "14:30", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "17:30"}
-            ]
+            ],
+            "image": "images/egames/egame7.jpg",
+            "Region":{
+                "fr": "Alsace",
+                "en": "Alsace",
+                "de": "Elsass"
+            }
         },
         {
             "id": 8,
@@ -210,7 +186,13 @@
                 {"start_time": "13:00", "end_time": "14:30"},
                 {"start_time": "14:30", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "17:30"}
-            ]
+            ],
+            "image": "images/egames/egame8.jpg",
+            "Region":{
+                "fr": "Lorraine",
+                "en": "Lorraine",
+                "de": "Lothringen"
+            }
         },
         {
             "id": 9,
@@ -227,7 +209,13 @@
                 {"start_time": "11:00", "end_time": "13:00"},
                 {"start_time": "14:00", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "18:00"}
-            ]
+            ],
+            "image": "images/egames/egame9.jpg",
+            "Region":{
+                "fr": "Lorraine",
+                "en": "Lorraine",
+                "de": "Lothringen"
+            }
         },
         {
             "id": 10,
@@ -248,7 +236,13 @@
                 {"start_time": "15:00", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "17:00"},
                 {"start_time": "17:00", "end_time": "18:00"}
-            ]
+            ],
+            "image": "images/egames/egame10.jpg",
+            "Region":{
+                "fr": "Lorraine",
+                "en": "Lorraine",
+                "de": "Lothringen"
+            }
         },
         {
             "id": 11,
@@ -266,7 +260,13 @@
                 {"start_time": "13:00", "end_time": "14:30"},
                 {"start_time": "14:30", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "17:30"}
-            ]
+            ],
+            "image": "images/egames/egame11.jpg",
+            "Region":{
+                "fr": "Franche-Comte",
+                "en": "Franche-Comte",
+                "de": "Franche-Comte"
+            }
         },
         {
             "id": 12,
@@ -287,7 +287,13 @@
                 {"start_time": "15:00", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "17:00"},
                 {"start_time": "17:00", "end_time": "18:00"}
-            ]
+            ],
+            "image": "images/egames/egame12.jpg",
+            "Region":{
+                "fr": "Franche-Comte",
+                "en": "Franche-Comte",
+                "de": "Franche-Comte"
+            }
         },
         {
             "id": 13,
@@ -304,8 +310,13 @@
                 {"start_time": "11:00", "end_time": "13:00"},
                 {"start_time": "14:00", "end_time": "16:00"},
                 {"start_time": "16:00", "end_time": "18:00"}
-            ]
+            ],
+            "image": "images/egames/egame13.jpg",
+            "Region":{
+                "fr": "Franche-Comte",
+                "en": "Franche-Comte",
+                "de": "Franche-Comte"
+            }
         }
-
     ]
 }

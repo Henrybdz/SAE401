@@ -18,8 +18,8 @@
 
 <body>
     <header>
-        <p class="header_title">We Escape</p>
-        <nav>
+        <a href="index.php" class="logo"><img src="images/img/logo_footer.png" alt="Logo We Escape" class="header_title"></a>
+        <nav>   
             <a href='index.php' data-translate='accueil'>Accueil</a>
             <a href='index.php?action=egames' data-translate='egames'>Escape Games</a>
             <a href='index.php?action=contact' data-translate='contact'>Contact</a>
