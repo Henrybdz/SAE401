@@ -193,9 +193,9 @@
     <div class="seminaire-container">
         <div class="seminaire-content">
             <h2 class="seminaire-title">
-                CES ENTREPRISES ONT CÉLÉBRÉ LEUR
-                <span>AVENTURE D'ÉVASION D'ENTREPRISE</span>
-                AVEC NOUS.
+                <span data-translate="seminaire">CES ENTREPRISES ONT CÉLÉBRÉ LEUR</span>
+                <span class="seminaire-span" data-translate="seminaireevasion">AVENTURE D'ÉVASION D'ENTREPRISE</span>
+                <span data-translate="avec">AVEC NOUS</span>.
             </h2>
             <div class="seminaire-item">
                 <img src="images/img/marque_seminaire.png" alt="marque_seminaire">
