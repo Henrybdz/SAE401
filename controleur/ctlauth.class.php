@@ -119,7 +119,8 @@ class CtlAuth {
             exit();
         }
 
-        $reservationinfo = Reservation::getUserReservations($currentUser['id']);
+        $reservationinfo = new Reservation();
+        $reservationinfo = $reservationinfo -> getUserReservations($currentUser['id']);
 
         $egamesinstances = new Egames();
         $egames = $egamesinstances->getAllEgames();
