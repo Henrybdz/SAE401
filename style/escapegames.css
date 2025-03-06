@@ -118,8 +118,7 @@
 }
 
 .egame-card p {
-  margin: 10px 0;
-  color: #666;
+  color: #b5b5b5;
 }
 
 .egame-card strong {
@@ -140,20 +139,30 @@
 }
 
 .egame-info {
-  margin: 2rem 0;
+  margin: 15px 0;
 }
 
 .egame-info h2 {
-  margin: 0;
+  margin: 10px 0;
   color: #ffffff;
   font-size: 1.2rem;
 }
 
-.egame-info p {
-  margin: 0.5rem 0;
+
+.egame-details-region {
+  display: block;
   line-height: 1.6;
   font-size: 1rem;
+  margin: 0;
 }
+
+.egame-details-duree {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+
+
 
 .adventure-btn {
   display: inline-block;
@@ -173,7 +182,6 @@
   background-color: #ff7300;
   color: white;
   text-decoration: none;
-  transform: translateY(-5px);
 }
 
 

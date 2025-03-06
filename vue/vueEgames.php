@@ -30,15 +30,15 @@
         echo '<div class="egame-info">';
         echo '<h2>' . htmlspecialchars($egame['nom']) . '</h2>';
         echo '<div class="egame-details">';
-        echo '<p><span data-translate="region">Région</span>: ' .
+        echo '<p class="egame-details-region"><span data-translate="region">Région</span>: ' .
           '<span class="translated-region" ' .
           'data-fr="' . htmlspecialchars($egame['Region']['fr']) . '" ' .
           'data-en="' . htmlspecialchars($egame['Region']['en']) . '" ' .
           'data-de="' . htmlspecialchars($egame['Region']['de']) . '">' .
-          htmlspecialchars($egame['Region']['fr']) . '</span> |
+          htmlspecialchars($egame['Region']['fr']) . '</span> <br>
           <span data-translate="lieu">Lieu</span></strong>: ' . htmlspecialchars($egame['lieu']) . '</p>';
 
-        echo '<p><span data-translate="duree">Durée</span>: ' . htmlspecialchars($egame['duree']) . ' <span data-translate="heures">heures</span></p>';
+        echo '<p class="egame-details-duree"><span data-translate="duree">Durée</span>: ' . htmlspecialchars($egame['duree']) . ' <span data-translate="heures">heures</span></p>';
         echo '</div>';
         echo '<a href="index.php?action=egameDetail&id=' . htmlspecialchars($egame['id']) . '" class="adventure-btn" data-translate="aventure">À L\'AVENTURE</a>';
         echo '</div>';

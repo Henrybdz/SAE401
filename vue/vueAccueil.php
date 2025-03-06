@@ -169,10 +169,40 @@
     <div class="partenaire-container">
         <h2 class="partenaire-title">
             <span data-translate="noussommes">Nous sommes </span>
-            <span class="partenaire-span" data-translate="partenaire">partenaire d'expérience</span> 
-            <span data-translate="de">de</span></h2>
+            <span class="partenaire-span" data-translate="partenaire">partenaire d'expérience</span>
+            <span data-translate="de">de</span>
+        </h2>
         <img src="images/img/partenaire.png" alt="liste des partenaires" class="partenaire-img">
+    </div>
+
+    <div class="avis-container">
+        <img src="images/img/background_avis.png" alt="avis" class="avis-img">
+        <div class="avis-content">
+            <div class="carousel-container">
+                <div class="carousel-inner"></div>
+                <button class="carousel-btn prev"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg></button>
+                <button class="carousel-btn next"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg></button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <div class="seminaire-container">
+        <div class="seminaire-content">
+            <h2 class="seminaire-title">
+                <span data-translate="seminaire">CES ENTREPRISES ONT CÉLÉBRÉ LEUR</span>
+                <span class="seminaire-span" data-translate="seminaireevasion">AVENTURE D'ÉVASION D'ENTREPRISE</span>
+                <span data-translate="avec">AVEC NOUS</span>.
+            </h2>
+            <div class="seminaire-item">
+                <img src="images/img/marque_seminaire.png" alt="marque_seminaire">
+            </div>
+        </div>
     </div>
 </div>
 
 <script src="script/carte.js"></script>
+<script src="script/avis.js"></script>
