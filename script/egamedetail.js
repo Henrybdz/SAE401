@@ -50,6 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
         cloud.style.transform = `translateY(${-scrollPosition * 0.7}px)`;
         cloud1.style.transform = `translateY(${-scrollPosition * 0.7}px)`;
     });
+
+    // Ajout des gestionnaires pour la navigation entre les étapes
+    document.getElementById('change-date').addEventListener('click', () => {
+        document.getElementById('calendar-section').style.display = 'block';
+        document.getElementById('time-slots-section').style.display = 'none';
+        document.getElementById('reservation-form').style.display = 'none';
+    });
+
+    document.getElementById('change-time').addEventListener('click', () => {
+        document.getElementById('time-slots-section').style.display = 'block';
+        document.getElementById('reservation-form').style.display = 'none';
+    });
 });
 
 // Configuration du calendrier avec Flatpickr
@@ -62,7 +74,22 @@ flatpickr('#date-picker', {
     altInput: true,
     monthSelectorType: "static",
     onChange: function (selectedDates, dateStr) {
-        fetchTimeSlots(dateStr);
+        console.log('Date sélectionnée:', dateStr);
+        if (selectedDates[0]) {
+            // Remplacer le calendrier par les créneaux horaires
+            document.getElementById('calendar-section').style.display = 'none';
+            document.getElementById('time-slots-section').style.display = 'block';
+            fetchTimeSlots(dateStr);
+
+            const dateSelected = document.getElementById('displayed-date1');
+            const dateSelected2 = document.getElementById('displayed-date2');
+            if (dateSelected) {
+                dateSelected.textContent = dateStr;
+                dateSelected2.textContent = dateStr;
+            } else {
+                console.error('L\'élément avec l\'ID "displayed-date" n\'existe pas.');
+            }
+        }
     }
 });
 
@@ -148,17 +175,16 @@ function displayTimeSlots(timeSlots) {
 
 // Fonction pour sélectionner un créneau horaire
 function selectTimeSlot(slot) {
-    const reservationForm = document.getElementById('reservation-form');
-    const dateSelected = document.getElementById('selected-date');
     const timeSelected = document.getElementById('selected-time');
+    const timeSlotsSection = document.getElementById('time-slots-section');
+    const reservationForm = document.getElementById('reservation-form');
 
-    // Stocker le créneau complet
     window.selectedSlot = slot;
+    timeSelected.textContent = `${slot.start_time} - ${slot.end_time}`;
 
+    // Remplacer la section des créneaux par le formulaire de réservation
+    timeSlotsSection.style.display = 'none';
     reservationForm.style.display = 'block';
-
-    dateSelected.innerHTML = `<p>${document.getElementById('date-picker').value}</p>`;
-    timeSelected.innerHTML = `<p>${slot.start_time} - ${slot.end_time}</p>`;
 
     const participantsSelect = document.getElementById('nb-participants');
     const totalPriceSpan = document.getElementById('total-price');
@@ -172,10 +198,10 @@ function selectTimeSlot(slot) {
     document.getElementById('confirm-reservation').addEventListener('click', function () {
         // Sauvegarder les détails de la réservation
         const reservationDetails = {
-            egameName: document.querySelector('.egame-detail h2').textContent,
+            /*egameName: document.querySelector('.egame-detail h2').textContent,*/
             date: document.getElementById('date-picker').value,
             time: `${slot.start_time} - ${slot.end_time}`,
-            duration: document.querySelector('.egame-info p:first-child').textContent,
+            /*duration: document.querySelector('.egame-info p:first-child').textContent,*/
             egame_id: new URLSearchParams(window.location.search).get('id'),
             start_time: slot.start_time,
             end_time: slot.end_time,
@@ -199,6 +225,13 @@ function confirmReservation(slot) {
         return;
     }
 
+    console.log('Détails de la réservation:', {
+        date: date,
+        start_time: slot.start_time,
+        end_time: slot.end_time,
+        egame_id: egameId
+    });
+
     fetch('index.php?action=createReservation', {
         method: 'POST',
         headers: {
@@ -212,8 +245,12 @@ function confirmReservation(slot) {
             egame_id: egameId
         })
     })
-        .then(response => response.json())
+        .then(response => {
+            console.log('Réponse de l\'API:', response);
+            return response.json();
+        })
         .then(data => {
+            console.log('Données de l\'API:', data);
             if (data.message === 'auth_required') {
                 // Rediriger vers la page de connexion avec l'URL de retour
                 const currentUrl = encodeURIComponent(window.location.href);
