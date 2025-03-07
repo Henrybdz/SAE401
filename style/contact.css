@@ -99,7 +99,7 @@
 }
 
 /* Lignes décoratives en arrière-plan */
-.background-lines {
+.background-lines2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -108,7 +108,7 @@
     z-index: 0;
 }
 
-.background-lines img {
+.background-lines2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;

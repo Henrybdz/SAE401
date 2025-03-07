@@ -7,7 +7,7 @@ $header = "<nav>
 ?>
 
 <div class="contact-container">
-    <div class="background-lines">
+    <div class="background-lines2">
         <img src="images/img/background_rayure.png" alt="background">
     </div>
     <div class="contact-content">

@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="style/paiement.css">
 
+<div class="background-lines">
+    <img src="images/img/background_rayure.png" alt="background">
+</div>
+
 <div class="payment-container">
     <div class="payment-details">
         <h2 data-translate="payment_title">Paiement de votre réservation</h2>
@@ -57,7 +61,8 @@
 
                 <div class="button-group">
                     <button type="button" id="back-button" class="btn-secondary" data-translate="back">Retour</button>
-                    <button type="submit" class="btn-primary" data-translate="confirm_payment">Confirmer le paiement</button>
+                    <button type="submit" class="btn-primary" data-translate="confirm_payment">Confirmer le
+                        paiement</button>
                 </div>
             </form>
         </div>
