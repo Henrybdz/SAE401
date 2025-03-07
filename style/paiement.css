@@ -10,13 +10,16 @@ body{
     border-radius: 67px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: slideUp 0.5s ease-out;
+    text-transform: uppercase;
 }
 
 .payment-details h2 {
+    text-align: center;
     color: #fff;
     margin-bottom: 2rem;
     font-size: xxx-large;
     font-weight: 1000;
+    text-transform: uppercase;
 }
 
 .reservation-summary {
