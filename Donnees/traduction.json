@@ -93,7 +93,14 @@
         "aventure":"À L'AVENTURE",
         "seminaire":"CES ENTREPRISES ONT CÉLÉBRÉ LEUR",
         "seminaireevasion":"AVENTURE D'ÉVASION D'ENTREPRISE",
-        "avec":"AVEC NOUS"
+        "avec":"AVEC NOUS",
+        "histoire": "Histoire -",
+        "reservation" : "Réservation",
+        "date_info" : "1. Date",
+        "horaire": "2. Horaires",
+        "change_date": "Changer la date",
+        "change_time": "Changer l'horaire",
+        "go_payment": "Aller au paiement"
     },
     "en": {
         "accueil": "Home",
@@ -189,7 +196,14 @@
         "aventure":"TO ADVENTURE",
         "seminaire":"THESE COMPANIES CELEBRATED THEIR",
         "seminaireevasion":"CORPORATE ESCAPE ADVENTURE",
-        "avec":"WITH US"
+        "avec":"WITH US",
+        "histoire": "Story -",
+        "reservation" : "Booking",
+        "date_info" : "1. Date",
+        "horaire": "2. Schedule",
+        "change_date": "Change the date",
+        "change_time": "Change the time",
+        "go_payment": "Go to payment"
     },
     "de": {
         "accueil": "Startseite",
@@ -285,6 +299,13 @@
         "aventure":"ZUM ABENTEUER",
         "seminaire":"DIESEN UNTERNEHMEN FEIERN IHR",
         "seminaireevasion":"CORPORATE ESCAPE ADVENTURE",
-        "avec":"MIT UNS"
+        "avec":"MIT UNS",
+        "histoire": "Geschichte -",
+        "reservation" : "Reservierung",
+        "date_info" : "1. Datum",
+        "horaire": "2. Stundenplan",
+        "change_date": "Datum ändern",
+        "change_time": "Stunde ändern",
+        "go_payment": "Zu Zahlung"
     }
 }

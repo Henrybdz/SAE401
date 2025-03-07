@@ -10,6 +10,11 @@ function updateTranslatedTexts(lang) {
         title.textContent = title.getAttribute('data-' + lang) || title.getAttribute('data-fr');
     });
 
+     // Mettre à jour les régions
+     document.querySelectorAll('.translated-region').forEach(region => {
+        region.textContent = region.getAttribute('data-' + lang) || region.getAttribute('data-fr');
+    });
+
 }
 
 function calculatePrice(participants) {
@@ -198,7 +203,7 @@ function selectTimeSlot(slot) {
     document.getElementById('confirm-reservation').addEventListener('click', function () {
         // Sauvegarder les détails de la réservation
         const reservationDetails = {
-            /*egameName: document.querySelector('.egame-detail h2').textContent,*/
+            egameName: document.querySelector('.main-content>h2').textContent,
             date: document.getElementById('date-picker').value,
             time: `${slot.start_time} - ${slot.end_time}`,
             /*duration: document.querySelector('.egame-info p:first-child').textContent,*/
