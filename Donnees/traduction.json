@@ -100,7 +100,11 @@
         "horaire": "2. Horaires",
         "change_date": "Changer la date",
         "change_time": "Changer l'horaire",
-        "go_payment": "Aller au paiement"
+        "go_payment": "Aller au paiement",
+        "difficulte": "Difficulté",
+        "reflexion": "Réflexion",
+        "manipulation": "Manipulation",
+        "fouille": "Fouille"
     },
     "en": {
         "accueil": "Home",
@@ -203,7 +207,11 @@
         "horaire": "2. Schedule",
         "change_date": "Change the date",
         "change_time": "Change the time",
-        "go_payment": "Go to payment"
+        "go_payment": "Go to payment",
+        "difficulte": "Difficulty",
+        "reflexion": "Reflection",
+        "manipulation": "Manipulation",
+        "fouille": "Search"
     },
     "de": {
         "accueil": "Startseite",
@@ -306,6 +314,10 @@
         "horaire": "2. Stundenplan",
         "change_date": "Datum ändern",
         "change_time": "Stunde ändern",
-        "go_payment": "Zu Zahlung"
+        "go_payment": "Zu Zahlung",
+        "difficulte": "Schwierigkeitsgrad",
+        "reflexion": "Reflexion",
+        "manipulation": "Manipulation",
+        "fouille": "Suche"
     }
 }

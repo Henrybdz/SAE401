@@ -16,22 +16,22 @@
 <!-- Indicateurs en haut -->
 <div class="indicator-bar">
     <div class="indicator">
-        <span>Difficulté</span>
+        <span data-translate="difficulte">Difficulté</span>
         <div class="bar"></div>
         <div class="progress-bar" style="width: <?= htmlspecialchars($egame['difficulte'])*10 ?>%"></div>
     </div>
     <div class="indicator">
-        <span>Réflexion</span>
+        <span data-translate="reflexion">Réflexion</span>
         <div class="bar"></div>
         <div class="progress-bar" style="width: <?= htmlspecialchars($egame['reflexion'])*10 ?>%"></div>
     </div>
     <div class="indicator">
-        <span>Manipulation</span>
+        <span data-translate="manipulation">Manipulation</span>
         <div class="bar"></div>
         <div class="progress-bar" style="width: <?= htmlspecialchars($egame['manipulation'])*10 ?>%"></div>
     </div>
     <div class="indicator">
-        <span>Fouille</span>
+        <span data-translate="fouille">Fouille</span>
         <div class="bar"></div>
         <div class="progress-bar" style="width: <?= htmlspecialchars($egame['fouille'])*10 ?>%"></div>
     </div>
