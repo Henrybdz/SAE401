@@ -17,19 +17,23 @@
 <div class="indicator-bar">
     <div class="indicator">
         <span>Difficulté</span>
-        <div class="progress-bar" style="width: 70%"></div>
+        <div class="bar"></div>
+        <div class="progress-bar" style="width: <?= htmlspecialchars($egame['difficulte'])*10 ?>%"></div>
     </div>
     <div class="indicator">
         <span>Réflexion</span>
-        <div class="progress-bar" style="width: 80%"></div>
+        <div class="bar"></div>
+        <div class="progress-bar" style="width: <?= htmlspecialchars($egame['reflexion'])*10 ?>%"></div>
     </div>
     <div class="indicator">
         <span>Manipulation</span>
-        <div class="progress-bar" style="width: 60%"></div>
+        <div class="bar"></div>
+        <div class="progress-bar" style="width: <?= htmlspecialchars($egame['manipulation'])*10 ?>%"></div>
     </div>
     <div class="indicator">
         <span>Fouille</span>
-        <div class="progress-bar" style="width: 70%"></div>
+        <div class="bar"></div>
+        <div class="progress-bar" style="width: <?= htmlspecialchars($egame['fouille'])*10 ?>%"></div>
     </div>
 </div>
 
@@ -53,7 +57,8 @@
                     <div class="info-section">
                         <h3>
                             <span data-translate="histoire">Histoire - </span>
-                            <span><?= htmlspecialchars($egame['nom']) ?></span></h3>
+                            <span><?= htmlspecialchars($egame['nom']) ?></span>
+                        </h3>
                         <p class="translated-description"
                             data-fr="<?= htmlspecialchars($egame['description']['fr']) ?>"
                             data-en="<?= htmlspecialchars($egame['description']['en']) ?>"
@@ -65,8 +70,9 @@
                         <h3 data-translate="informations">Informations</h3>
                         <p>
                             <span data-translate="duree">Durée</span> :
-                            <span><?= htmlspecialchars($egame['duree']) ?></span>  
-                            <span data-translate="heures">heures</span></p>
+                            <span><?= htmlspecialchars($egame['duree']) ?></span>
+                            <span data-translate="heures">heures</span>
+                        </p>
                         <p>
                             <span data-translate="lieu">Lieu</span> :
                             <span><?= htmlspecialchars($egame['lieu']) ?></span>
@@ -132,7 +138,7 @@
                         <div class="price-total">
                             <span data-translate="total_price">Total :</span>
                             <span><span id="total-price">60</span>
-                            <span data-translate="money">€</span></span>
+                                <span data-translate="money">€</span></span>
                         </div>
                     </div>
                     <button id="change-time" class="btn-secondary" data-translate="change_time">Changer l'horaire</button>

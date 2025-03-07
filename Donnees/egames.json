@@ -21,7 +21,11 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
+            },
+            "difficulte": 6,
+            "reflexion": 8,
+            "manipulation": 4,
+            "fouille": 6
         },
         {
             "id": 2,
@@ -45,7 +49,11 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
+            },
+            "difficulte": 8,
+            "reflexion": 9,
+            "manipulation": 6,
+            "fouille": 7
         },
         {
             "id": 3,
@@ -72,7 +80,11 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
+            },
+            "difficulte": 7,
+            "reflexion": 9,
+            "manipulation": 3,
+            "fouille": 5
         },
         {
             "id": 4,
@@ -96,8 +108,13 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
-        },{
+            },
+            "difficulte": 5,
+            "reflexion": 9,
+            "manipulation": 2,
+            "fouille": 8
+        },
+        {
             "id": 5,
             "nom": "L'Auberge Mystérieuse",
             "duree": 1,
@@ -121,7 +138,11 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
+            },
+            "difficulte": 7,
+            "reflexion": 9,
+            "manipulation": 6,
+            "fouille": 8
         },
         {
             "id": 6,
@@ -144,7 +165,11 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
+            },
+            "difficulte": 5,
+            "reflexion": 7,
+            "manipulation": 8,
+            "fouille": 9
         },
         {
             "id": 7,
@@ -168,7 +193,11 @@
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
-            }
+            },
+            "difficulte": 9,
+            "reflexion": 5,
+            "manipulation": 10,
+            "fouille": 3
         },
         {
             "id": 8,
@@ -192,7 +221,11 @@
                 "fr": "Lorraine",
                 "en": "Lorraine",
                 "de": "Lothringen"
-            }
+            },
+            "difficulte": 5,
+            "reflexion": 9,
+            "manipulation": 6,
+            "fouille": 8
         },
         {
             "id": 9,
@@ -215,7 +248,11 @@
                 "fr": "Lorraine",
                 "en": "Lorraine",
                 "de": "Lothringen"
-            }
+            },
+            "difficulte": 7,
+            "reflexion": 5,
+            "manipulation": 10,
+            "fouille": 3
         },
         {
             "id": 10,
@@ -242,7 +279,11 @@
                 "fr": "Lorraine",
                 "en": "Lorraine",
                 "de": "Lothringen"
-            }
+            },
+            "difficulte": 7,
+            "reflexion": 8,
+            "manipulation": 4,
+            "fouille": 9
         },
         {
             "id": 11,
@@ -266,7 +307,11 @@
                 "fr": "Franche-Comte",
                 "en": "Franche-Comte",
                 "de": "Franche-Comte"
-            }
+            },
+            "difficulte": 4,
+            "reflexion": 8,
+            "manipulation": 3,
+            "fouille": 9
         },
         {
             "id": 12,
@@ -293,7 +338,11 @@
                 "fr": "Franche-Comte",
                 "en": "Franche-Comte",
                 "de": "Franche-Comte"
-            }
+            },
+            "difficulte": 5,
+            "reflexion": 7,
+            "manipulation": 5,
+            "fouille": 8
         },
         {
             "id": 13,
@@ -316,7 +365,11 @@
                 "fr": "Franche-Comte",
                 "en": "Franche-Comte",
                 "de": "Franche-Comte"
-            }
+            },
+            "difficulte": 6,
+            "reflexion": 9,
+            "manipulation": 7,
+            "fouille": 5
         }
     ]
 }
