@@ -1,5 +1,9 @@
 <?php $title = "Connexion"; ?>
 
+<div class="background-lines">
+    <img src="images/img/background_rayure.png" alt="background">
+</div>
+
 <div class="auth-container">
     <h2 data-translate="connexion">Connexion</h2>
     <?php if(isset($error)): ?>
