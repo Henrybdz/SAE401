@@ -1,11 +1,3 @@
-<?php
-$header = "<nav>
-    <a href='index.php'>Accueil</a>
-    <a href='index.php?action=egames'>Escape Games</a>
-    <a href='index.php?action=contact'>Contact</a>
-</nav>";
-?>
-
 <div class="contact-container">
     <div class="background-lines2">
         <img src="images/img/background_rayure.png" alt="background">
