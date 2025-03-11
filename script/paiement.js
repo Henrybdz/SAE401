@@ -58,13 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    alert('Paiement et réservation effectués avec succès !');
                     // Nettoyer le localStorage
                     localStorage.removeItem('reservationDetails');
                     // Rediriger vers la page d'accueil ou une page de confirmation
-                    window.location.href = 'index.php?action=egames';
+                    window.location.href = 'index.php?action=profile';
+                    alert('Paiement et réservation effectués avec succès !');
                 } else {
                     alert(data.message || 'Une erreur est survenue lors de la réservation');
+                    sendEmail();
                 }
             })
             .catch(error => {
@@ -72,4 +73,3 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 });
-
