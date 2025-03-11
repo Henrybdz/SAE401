@@ -8,6 +8,8 @@ class Carousel {
         this.items = [];
         this.isTransitioning = false;
 
+        window.carouselInstance = this;
+        
         this.init();
     }
 
@@ -17,7 +19,10 @@ class Carousel {
             const data = await response.json();
             this.items = data.avis;
 
-            this.renderItems();
+            // Récupérer la langue sauvegardée
+            const savedLang = localStorage.getItem('selectedLang') || 'fr';
+
+            this.renderItems(savedLang); // Passer la langue à renderItems
             this.renderDots();
             this.addEventListeners();
 
@@ -38,21 +43,21 @@ class Carousel {
         }
     }
 
-    renderItems() {
+    renderItems(language) {
         this.items.forEach((item, index) => {
             const itemElement = document.createElement('div');
             itemElement.className = 'carousel-item';
             itemElement.style.opacity = '0';
-
+    
             const stars = '★'.repeat(item.note) + '☆'.repeat(5 - item.note);
-
+    
             itemElement.innerHTML = `
-                <h2 class="avis-title">"${item.titre}"</h2>
-                <p class="avis-text">${item.texte}</p>
+                <h2 class="avis-title">"${item.titre[language] || item.titre['fr']}"</h2>
+                <p class="avis-text">${item.texte[language] || item.texte['fr']}</p>
                 <p class="avis-author">${item.auteur}</p>
                 <div class="avis-rating">${stars}</div>
             `;
-
+    
             this.container.appendChild(itemElement);
         });
     }

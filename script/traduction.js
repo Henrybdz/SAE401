@@ -33,7 +33,11 @@ function changeLang(lang) {
     if (selector) {
         selector.setAttribute('data-current-lang', lang);
     }
-}
+
+     // Appeler renderItems avec la nouvelle langue
+    if (window.carouselInstance) {
+        window.carouselInstance.renderItems(lang);
+}}
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', function() {

@@ -1,20 +1,44 @@
 {
     "avis": [
         {
-            "titre": "Une expérience incroyable !",
-            "texte": "Nous avons passé un moment extraordinaire avec notre équipe. Les énigmes étaient bien pensées et l'ambiance était parfaite.",
+            "titre": {
+                "fr": "Une expérience incroyable !",
+                "en": "An amazing experience!",
+                "de": "Ein erstaunliches Erlebnis!"
+            },
+            "texte": {
+                "fr": "Nous avons passé un moment extraordinaire avec notre équipe. Les énigmes étaient bien pensées et l'ambiance était parfaite.",
+                "en": "We had an extraordinary time with our team. The puzzles were well thought out and the atmosphere was perfect.",
+                "de": "Wir hatten eine außergewöhnliche Zeit mit unserem Team. Die Rätsel waren gut durchdacht und die Atmosphäre war perfekt."
+            },
             "auteur": "Marie D.",
             "note": 5
         },
         {
-            "titre": "Team building réussi",
-            "texte": "Excellente activité pour renforcer l'esprit d'équipe. Tout le monde a adoré et participé activement.",
+            "titre": {
+                "fr": "Team building réussi",
+                "en": "Successful team building",
+                "de": "Erfolgreiches Teambuilding"
+            },
+            "texte": {
+                "fr": "Excellente activité pour renforcer l'esprit d'équipe. Tout le monde a adoré et participé activement.",
+                "en": "Excellent activity to strengthen team spirit. Everyone loved it and participated actively.",
+                "de": "Ausgezeichnete Aktivität zur Stärkung des Teamgeists. Alle haben es geliebt und aktiv teilgenommen."
+            },
             "auteur": "Thomas L.",
             "note": 5
         },
         {
-            "titre": "À recommander absolument",
-            "texte": "Une organisation au top, des énigmes originales et un accueil chaleureux. Nous reviendrons !",
+            "titre": {
+                "fr": "À recommander absolument",
+                "en": "Absolutely recommended",
+                "de": "Absolut empfehlenswert"
+            },
+            "texte": {
+                "fr": "Une organisation au top, des énigmes originales et un accueil chaleureux. Nous reviendrons !",
+                "en": "Top-notch organization, original puzzles, and a warm welcome. We will be back!",
+                "de": "Erstklassige Organisation, originelle Rätsel und ein herzlicher Empfang. Wir werden zurückkommen!"
+            },
             "auteur": "Sophie M.",
             "note": 4
         }
