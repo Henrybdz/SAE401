@@ -28,36 +28,43 @@ document.addEventListener('DOMContentLoaded', function () {
                 x: 520,
                 y: 165,
                 name: 'Strasbourg',
+                escapegameID: '1'
             },
             {
                 x: 505,
                 y: 190,
-                name: 'Colmar'
+                name: 'Colmar',
+                escapegameID: '3'
             },
             {
                 x: 502,
                 y: 215,
-                name: 'Mulhouse'
+                name: 'Mulhouse',
+                escapegameID: '2'
             },
             {
                 x: 494,
                 y: 185,
-                name: 'Le Bonhomme'
+                name: 'Le Bonhomme',
+                escapegameID: '5'
             },
             {
                 x: 491,
                 y: 198,
-                name: 'Munster'
+                name: 'Munster',
+                escapegameID: '4'
             },
             {
                 x: 497,
                 y: 168,
-                name: 'Schirmeck'
+                name: 'Schirmeck',
+                escapegameID: '6'
             },
             {
                 x: 504,
                 y: 155,
-                name: 'Saverne'
+                name: 'Saverne',
+                escapegameID: '7'
             }
             ]
         },
@@ -67,17 +74,20 @@ document.addEventListener('DOMContentLoaded', function () {
             markers: [{
                 x: 445,
                 y: 220,
-                name: 'Besançon'
+                name: 'Besançon',
+                escapegameID: '11'
             },
             {
                 x: 435,
                 y: 240,
-                name: 'Dole'
+                name: 'Dole',
+                escapegameID: '12'
             },
             {
                 x: 450,
                 y: 260,
-                name: 'Belfort'
+                name: 'Belfort',
+                escapegameID: '13'
             }
             ]
         },
@@ -87,17 +97,20 @@ document.addEventListener('DOMContentLoaded', function () {
             markers: [{
                 x: 440,
                 y: 130,
-                name: 'Metz'
+                name: 'Metz',
+                escapegameID: '8'
             },
             {
                 x: 450,
                 y: 150,
-                name: 'Nancy'
+                name: 'Nancy',
+                escapegameID: '9'
             },
             {
                 x: 430,
                 y: 170,
-                name: 'Épinal'
+                name: 'Épinal',
+                escapegameID: '10'
             }
             ]
         }
@@ -164,6 +177,16 @@ document.addEventListener('DOMContentLoaded', function () {
                         text.setAttribute('opacity', '0'); // Cacher le texte quand la souris quitte
                     });
 
+                    //Ajout redirection vers escape game
+                    circle.addEventListener('click', () => {
+                        redirigerVersEscapeGame(marker.escapegameID); 
+                    });
+
+                    function redirigerVersEscapeGame(escapeGameId) {
+                        console.log(`Redirection vers l'escape game avec l'ID: ${marker.escapegameID}`);
+                        window.location.href = `index.php?action=egameDetail&id=${marker.escapegameID}`;
+                    }
+
                     // Ajouter le cercle et le texte au groupe
                     markerGroup.appendChild(circle);
                     markerGroup.appendChild(text);
@@ -183,3 +206,4 @@ document.addEventListener('DOMContentLoaded', function () {
         regionDetail.classList.remove('active');
     });
 });
+
