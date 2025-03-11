@@ -23,26 +23,31 @@ require_once "controleur/ReservationController.class.php";
             </div>
             <div class="info-reservation">
                 <h3 data-translate='mesreservations'>Mes reservations</h3>
-                <?php foreach ($reservationinfo as $reservation): ?>
-                    <?php
-                    // Trouver l'escape game correspondant
-                    $egame = null;
-                    foreach ($egames as $game) {
-                        if ($game['id'] === $reservation['egame_id']) {
-                            $egame = $game;
-                            break;
+                <div class="reservation-liste">
+                    <?php foreach ($reservationinfo as $reservation): ?>
+                        <?php
+                        // Trouver l'escape game correspondant
+                        $egame = null;
+                        foreach ($egames as $game) {
+                            if ($game['id'] === $reservation['egame_id']) {
+                                $egame = $game;
+                                break;
+                            }
                         }
-                    }
-                    ?>
-                    <?php if ($egame): ?>
-                        <div class="reservation">
-                            <h3><?= $egame['nom']; ?></h3>
-                            <p data-translate="date">Date de réservation :</p><p><?=$reservation['date']; ?></p>
-                            <p data-translate="heuredebut">Heure de début :</p><p><?=$reservation['start_time']; ?></p>
-                            <p data-translate="heurefin">Heure de fin :</p><p><?=$reservation['end_time']; ?></p>
-                        </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
+                        ?>
+                        <?php if ($egame): ?>
+                            <div class="reservation">
+                                <div class="reservation-nom">
+                                    <span data-translate="reservation">Réservation</span>:
+                                    <h4><?= $egame['nom']; ?></h4>
+                                </div>
+                                <ul>
+                                    <li> <?= $reservation['date']; ?> - <?= date('H:i', strtotime($reservation['start_time'])); ?></li>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
 
