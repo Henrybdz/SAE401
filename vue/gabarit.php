@@ -121,24 +121,24 @@
             <div class="footer-links-section">
                 <div class="footer-links-column">
                     <h3 class="footer-links-title" data-translate="suivre">POURSUIVRE</h3>
-                    <div class="footer-links">
-                        <a href="#" data-translate="apropos">À propos de nous</a>
-                        <a href="#" data-translate="blog">Blog</a>
-                        <a href="#" data-translate="contact">Contact</a>
-                        <a href="#" data-translate="mentions">Mentions légales</a>
-                        <a href="#" data-translate="confidentialite">Politique de confidentialité</a>
-                        <a href="#" data-translate="conditions">Conditions générales</a>
+                    <div class="footer-links"> <!-- Voir pour refaire les pages si possible-->
+                        <a href="https://we-escape.de/ueber-uns" data-translate="apropos">À propos de nous</a>
+                        <a href="https://we-escape.de/we-escape-blog-aus-dem-leben-einer-abenteuerbande/" data-translate="blog">Blog</a>
+                        <a href="index.php?action=contact" data-translate="contact">Contact</a>
+                        <a href="https://we-escape.de/impressum/" data-translate="mentions">Mentions légales</a>
+                        <a href="https://we-escape.de/datenschutz/" data-translate="confidentialite">Politique de confidentialité</a>
+                        <a href="https://we-escape.de/agb/" data-translate="conditions">Conditions générales</a>
                     </div>
                 </div>
 
                 <div class="footer-links-column">
                     <h3 class="footer-links-title" data-translate="informations">INFORMATIONS</h3>
-                    <div class="footer-links">
-                        <a href="#" data-translate="emplois">Emplois / Carrières</a>
-                        <a href="#" data-translate="faq">FAQ</a>
-                        <a href="#" data-translate="cadeaux">Bons cadeaux</a>
-                        <a href="#" data-translate="team">Perfect Team Event & Team Building</a>
-                        <a href="#" data-translate="escape">Escape Room en plein air</a>
+                    <div class="footer-links"> <!-- Voir pour refaire les pages si possible-->
+                        <a href="https://we-escape.de/jobs-karriere/" data-translate="emplois">Emplois / Carrières</a>
+                        <a href="https://we-escape.de/faq-fragen-antworten/" data-translate="faq">FAQ</a>
+                        <a href="https://we-escape.de/gutscheine/" data-translate="cadeaux">Bons cadeaux</a>
+                        <a href="https://we-escape.de/perfektes-teamevent-teambuilding/" data-translate="team">Perfect Team Event & Team Building</a>
+                        <a href="https://we-escape.de/outdoor-escape-room/" data-translate="escape">Escape Room en plein air</a>
                     </div>
                 </div>
             </div>
