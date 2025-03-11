@@ -5,6 +5,11 @@ function updateTranslatedTexts(lang) {
         desc.textContent = desc.getAttribute('data-' + lang) || desc.getAttribute('data-fr');
     });
 
+    // Mettre à jour les descriptions detaillées
+    document.querySelectorAll('.translated-description-detaillee').forEach(descd => {
+        descd.textContent = descd.getAttribute('data-' + lang) || descd.getAttribute('data-fr');
+    });
+
     // Mettre à jour les titres
     document.querySelectorAll('.translated-title').forEach(title => {
         title.textContent = title.getAttribute('data-' + lang) || title.getAttribute('data-fr');
@@ -275,3 +280,10 @@ function confirmReservation(slot) {
             alert('Une erreur est survenue lors de la réservation');
         });
 }
+
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});

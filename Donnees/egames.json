@@ -10,14 +10,31 @@
                 "en": "Embark on an adventure in the catacombs of Strasbourg in search of a legendary treasure!",
                 "de": "Begeben Sie sich auf ein Abenteuer in den Katakomben von Strasbourg auf der Suche nach einem legendären Schatz!"
             },
+            "description_detaillee": {
+                "fr": "Oserez-vous pénétrer dans les profondeurs des mystérieuses catacombes de Strasbourg ? Caché depuis des siècles, un trésor légendaire attend d'être découvert, mais seul un esprit aiguisé et un sens de l'observation affûté vous permettront de triompher. Entre passages étroits et énigmes complexes, vous devrez faire preuve de logique, de coopération et de courage pour éviter les pièges laissés par les anciens gardiens. Chaque décision vous rapproche du but... ou vous éloigne du trésor tant convoité ! Serez-vous à la hauteur du défi ?",
+                "en": "Will you dare to venture into the depths of Strasbourg's mysterious catacombs? Hidden for centuries, a legendary treasure awaits discovery, but only a sharp mind and keen observation skills will lead you to victory. Through narrow passages and complex puzzles, you must use logic, teamwork, and courage to avoid the traps left by the ancient guardians. Every decision brings you closer to the goal... or pushes you further away from the coveted treasure! Do you have what it takes to succeed?",
+                "de": "Wagen Sie es, in die Tiefen der geheimnisvollen Katakomben von Straßburg hinabzusteigen? Seit Jahrhunderten verborgen, wartet ein legendärer Schatz darauf, entdeckt zu werden – doch nur mit scharfem Verstand und einem aufmerksamen Auge können Sie triumphieren. Zwischen engen Gängen und kniffligen Rätseln müssen Sie Logik, Teamarbeit und Mut beweisen, um die Fallen der alten Wächter zu umgehen. Jede Entscheidung bringt Sie dem Ziel näher... oder entfernt Sie vom heiß begehrten Schatz! Haben Sie das Zeug dazu, die Herausforderung zu meistern?"
+            },
             "time_slots": [
-                {"start_time": "09:00","end_time": "11:00"},
-                {"start_time": "11:00","end_time": "13:00"},
-                {"start_time": "14:00","end_time": "16:00"},
-                {"start_time": "16:00","end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "13:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame1.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -37,15 +54,35 @@
                 "en": "A deadly virus threatens humanity. You have 90 minutes to find the antidote!",
                 "de": "Ein tödliches Virus bedroht die Menschheit. Sie haben 90 Minuten Zeit, das Gegenmittel zu finden!"
             },
+            "description_detaillee": {
+                "fr": "L'Énigme du Laboratoire vous plonge dans un scénario palpitant où un virus mortel se répand à une vitesse alarmante. Votre équipe doit explorer un laboratoire de haute sécurité, résoudre des énigmes complexes et manipuler des instruments scientifiques pour découvrir l'antidote avant qu'il ne soit trop tard. Chaque choix compte et chaque minute peut faire la différence. Serez-vous assez rapide et astucieux pour sauver l'humanité ?",
+                "en": "The Laboratory Puzzle immerses you in a thrilling scenario where a deadly virus is spreading at an alarming rate. Your team must explore a high-security laboratory, solve complex puzzles, and handle scientific instruments to find the antidote before it's too late. Every choice matters, and every minute counts. Will you be fast and clever enough to save humanity?",
+                "de": "Das Laborrätsel taucht Sie in ein spannendes Szenario ein, in dem ein tödliches Virus mit alarmierender Geschwindigkeit verbreitet wird. Ihr Team muss ein Hochsicherheitslabor durchsuchen, komplexe Rätsel lösen und wissenschaftliche Instrumente benutzen, um das Gegenmittel zu finden, bevor es zu spät ist. Jede Entscheidung zählt, und jede Minute kann den Unterschied ausmachen. Werden Sie schnell und clever genug sein, um die Menschheit zu retten?"
+            },
             "time_slots": [
-                {"start_time": "09:00","end_time": "10:30"},
-                {"start_time": "10:30","end_time": "12:00"},
-                {"start_time": "13:00","end_time": "14:30"},
-                {"start_time": "14:30","end_time": "16:00"},
-                {"start_time": "16:00","end_time": "17:30"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
             ],
             "image": "images/egames/egame2.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -57,7 +94,7 @@
         },
         {
             "id": 3,
-            "nom":"Le Manoir Hanté",
+            "nom": "Le Manoir Hanté",
             "duree": 1,
             "lieu": "Colmar",
             "description": {
@@ -65,18 +102,47 @@
                 "en": "Dare to enter this haunted mansion and discover its terrible secrets before it's too late!",
                 "de": "Wagen Sie es, dieses Spukhaus zu betreten und entdecken Sie seine schrecklichen Geheimnisse, bevor es zu spät ist!"
             },
+            "description_detaillee": {
+                "fr": "Le Manoir Hanté est une aventure où vous et votre équipe devez explorer un manoir mystérieusement abandonné. Des bruits étranges, des portes qui claquent et des ombres inquiétantes vous attendent à chaque coin. Votre mission est de percer les mystères de ce lieu maudit, résoudre les énigmes et éviter les pièges, le tout avant que les forces surnaturelles ne prennent le contrôle. Serez-vous capable de découvrir les sombres secrets du manoir avant qu'il ne soit trop tard ?",
+                "en": "The Haunted Mansion is an adventure where you and your team must explore a mysteriously abandoned mansion. Strange noises, banging doors, and unsettling shadows await you at every corner. Your mission is to uncover the mysteries of this cursed place, solve the puzzles, and avoid the traps, all before supernatural forces take control. Will you be able to discover the mansion's dark secrets before it's too late?",
+                "de": "Das Spukhaus ist ein Abenteuer, bei dem Sie und Ihr Team ein geheimnisvoll verlassenes Haus erkunden müssen. Seltsame Geräusche, zuschlagende Türen und beunruhigende Schatten erwarten Sie an jeder Ecke. Ihre Mission ist es, die Geheimnisse dieses verfluchten Ortes zu lüften, Rätsel zu lösen und Fallen zu vermeiden, bevor übernatürliche Kräfte die Kontrolle übernehmen. Werden Sie in der Lage sein, die dunklen Geheimnisse des Hauses zu entdecken, bevor es zu spät ist?"
+            },
             "time_slots": [
-                {"start_time": "09:00","end_time": "10:00"},
-                {"start_time": "10:00","end_time": "11:00"},
-                {"start_time": "11:00","end_time": "12:00"},
-                {"start_time": "13:00","end_time": "14:00"},
-                {"start_time": "14:00","end_time": "15:00"},
-                {"start_time": "15:00","end_time": "16:00"},
-                {"start_time": "16:00","end_time": "17:00"},
-                {"start_time": "17:00","end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:00"
+                },
+                {
+                    "start_time": "10:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "15:00"
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:00"
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame3.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -96,15 +162,35 @@
                 "en": "Discover the ancestral mysteries of Munster cheese making in an old cheese factory!",
                 "de": "Entdecken Sie die uralten Geheimnisse der Münsterkäseherstellung in einer alten Käserei!"
             },
+            "description_detaillee": {
+                "fr": "Dans cette aventure, vous serez plongés dans les secrets bien gardés de la fabrication du Munster, un fromage emblématique de la région. Vous devrez explorer une ancienne fromagerie, résoudre des énigmes liées aux traditions locales et découvrir des techniques de fabrication ancestrales. Mais attention, des mystères non résolus vous attendent à chaque coin, et seules les personnes les plus perspicaces parviendront à percer tous les secrets du Munster. Oserez-vous relever le défi ?",
+                "en": "In this adventure, you will dive into the well-kept secrets of Munster cheese making, a famous cheese from the region. You must explore an old cheese factory, solve puzzles related to local traditions, and uncover ancient cheese-making techniques. But beware, unsolved mysteries await you at every turn, and only the most perceptive will uncover all the secrets of Munster. Will you dare to take on the challenge?",
+                "de": "In diesem Abenteuer tauchen Sie in die gut gehüteten Geheimnisse der Münsterkäseherstellung ein, einem berühmten Käse aus der Region. Sie müssen eine alte Käserei erkunden, Rätsel lösen, die mit lokalen Traditionen zusammenhängen, und alte Käseherstellungstechniken entdecken. Aber Vorsicht, ungelöste Geheimnisse warten an jeder Ecke, und nur die Wahrnehmendsten werden alle Geheimnisse des Münsterkäse enthüllen. Werden Sie sich der Herausforderung stellen?"
+            },
             "time_slots": [
-                {"start_time": "09:00","end_time": "10:30"},
-                {"start_time": "10:30","end_time": "12:00"},
-                {"start_time": "13:00","end_time": "14:30"},
-                {"start_time": "14:30","end_time": "16:00"},
-                {"start_time": "16:00","end_time": "17:30"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
             ],
             "image": "images/egames/egame4.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -124,17 +210,43 @@
                 "en": "An old Alsatian inn hides a centuries-old secret. Can you uncover it?",
                 "de": "Ein altes elsässisches Gasthaus verbirgt ein jahrhundertealtes Geheimnis. Können Sie es lüften?"
             },
+            "description_detaillee": {
+                "fr": "L'Auberge Mystérieuse vous plonge dans une aventure pleine de mystères, où vous devrez résoudre des énigmes en explorant chaque recoin d'une vieille auberge alsacienne. Ce lieu historique cache des secrets remontant à des siècles, et chaque indice vous rapproche un peu plus de la vérité. Pourrez-vous déchiffrer les mystères cachés dans les murs de l'auberge avant qu'il ne soit trop tard ?",
+                "en": "The Mysterious Inn immerses you in an adventure full of mysteries, where you must solve puzzles by exploring every corner of an old Alsatian inn. This historical place hides secrets dating back centuries, and every clue brings you closer to the truth. Will you be able to unravel the mysteries hidden within the walls of the inn before it's too late?",
+                "de": "Die Mysteriöse Herberge versetzt Sie in ein Abenteuer voller Geheimnisse, bei dem Sie Rätsel lösen müssen, indem Sie jedes Eck eines alten elsässischen Gasthauses erkunden. Dieser historische Ort verbirgt Geheimnisse, die Jahrhunderte zurückreichen, und jeder Hinweis bringt Sie der Wahrheit näher. Werden Sie in der Lage sein, die Geheimnisse, die in den Mauern des Gasthauses verborgen sind, zu entschlüsseln, bevor es zu spät ist?"
+            },
             "time_slots": [
-                {"start_time": "09:00","end_time": "10:00"},
-                {"start_time": "10:00","end_time": "11:00"},
-                {"start_time": "11:00","end_time": "12:00"},
-                {"start_time": "13:00","end_time": "14:00"},
-                {"start_time": "14:00","end_time": "15:00"},
-                {"start_time": "16:00","end_time": "17:00"},
-                {"start_time": "17:00","end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:00"
+                },
+                {
+                    "start_time": "10:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "15:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:00"
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame5.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -154,14 +266,31 @@
                 "en": "Dive into the history of the Resistance and decipher coded messages before it's too late!",
                 "de": "Tauchen Sie ein in die Geschichte des Widerstands und entschlüsseln Sie codierte Nachrichten, bevor es zu spät ist!"
             },
+            "description_detaillee": {
+                "fr": "Dans ce jeu immersif, vous entrez dans la peau d'un membre de la Résistance durant la Seconde Guerre mondiale. Vous devrez déchiffrer des messages codés, trouver des indices cachés et résoudre des énigmes pour empêcher l'ennemi de découvrir les secrets de la Résistance. Chaque minute compte, alors êtes-vous prêt à relever ce défi historique avant qu'il ne soit trop tard ?",
+                "en": "In this immersive game, you step into the shoes of a member of the Resistance during World War II. You must decode messages, find hidden clues, and solve puzzles to prevent the enemy from uncovering the secrets of the Resistance. Every minute counts, so are you ready to take on this historical challenge before it's too late?",
+                "de": "In diesem immersiven Spiel schlüpfen Sie in die Rolle eines Mitglieds des Widerstands während des Zweiten Weltkriegs. Sie müssen Nachrichten entschlüsseln, versteckte Hinweise finden und Rätsel lösen, um zu verhindern, dass der Feind die Geheimnisse des Widerstands entdeckt. Jede Minute zählt, also sind Sie bereit, diese historische Herausforderung anzunehmen, bevor es zu spät ist?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "11:00"},
-                {"start_time": "11:00", "end_time": "13:00"},
-                {"start_time": "14:00", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "13:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame6.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -181,15 +310,35 @@
                 "en": "Explore the secrets of the Rohan Castle and discover the cardinals' treasure!",
                 "de": "Erkunden Sie die Geheimnisse des Rohan-Schlosses und entdecken Sie den Schatz der Kardinäle!"
             },
+            "description_detaillee": {
+                "fr": "Le Château des Rohan vous plonge dans une aventure médiévale mystérieuse où des indices cachés vous guideront à travers les salles anciennes du château. Vous devrez résoudre des énigmes complexes et décrypter des messages secrets pour retrouver le trésor légendaire des cardinaux. Êtes-vous prêt à découvrir les mystères de cet imposant château et à percer ses secrets ?",
+                "en": "Rohan Castle takes you into a mysterious medieval adventure where hidden clues will guide you through the ancient halls of the castle. You will need to solve complex puzzles and decipher secret messages to find the legendary treasure of the cardinals. Are you ready to uncover the secrets of this imposing castle and unveil its mysteries?",
+                "de": "Das Schloss Rohan entführt Sie in ein mysteriöses mittelalterliches Abenteuer, bei dem versteckte Hinweise Sie durch die alten Hallen des Schlosses führen werden. Sie müssen komplexe Rätsel lösen und geheime Botschaften entschlüsseln, um den legendären Schatz der Kardinäle zu finden. Sind Sie bereit, die Geheimnisse dieses imposanten Schlosses zu entdecken und seine Rätsel zu lüften?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "10:30"},
-                {"start_time": "10:30", "end_time": "12:00"},
-                {"start_time": "13:00", "end_time": "14:30"},
-                {"start_time": "14:30", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "17:30"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
             ],
             "image": "images/egames/egame7.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Alsace",
                 "en": "Alsace",
                 "de": "Elsass"
@@ -209,15 +358,35 @@
                 "en": "Infiltrate a secret base and foil an international plot!",
                 "de": "Infiltrieren Sie einen geheimen Stützpunkt und vereiteln Sie eine internationale Verschwörung!"
             },
+            "description_detaillee": {
+                "fr": "L'Opération Dragon vous plonge dans l'univers secret des missions d'espionnage. Vous devrez infiltrer une base ultra-sécurisée, éviter les pièges et résoudre des énigmes pour déjouer un complot international menaçant la paix mondiale. Votre mission est simple : empêcher la catastrophe à tout prix, mais chaque seconde compte !",
+                "en": "Operation Dragon plunges you into the secret world of espionage missions. You must infiltrate a high-security base, avoid traps, and solve puzzles to foil an international plot threatening world peace. Your mission is simple: prevent the catastrophe at all costs, but every second counts!",
+                "de": "Die Operation Dragon entführt Sie in die geheime Welt von Spionagemissionen. Sie müssen eine hochsichere Basis infiltrieren, Fallen ausweichen und Rätsel lösen, um eine internationale Verschwörung zu vereiteln, die den Weltfrieden bedroht. Ihre Mission ist einfach: Verhindern Sie die Katastrophe um jeden Preis, aber jede Sekunde zählt!"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "10:30"},
-                {"start_time": "10:30", "end_time": "12:00"},
-                {"start_time": "13:00", "end_time": "14:30"},
-                {"start_time": "14:30", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "17:30"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
             ],
             "image": "images/egames/egame8.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Lorraine",
                 "en": "Lorraine",
                 "de": "Lothringen"
@@ -237,14 +406,31 @@
                 "en": "Enter a mysterious school of magic and solve riddles to become a true wizard!",
                 "de": "Betreten Sie eine mysteriöse Zauberschule und lösen Sie Rätsel, um ein echter Zauberer zu werden!"
             },
+            "description_detaillee": {
+                "fr": "Dans cette aventure magique, vous plongerez dans un univers mystérieux où des secrets antiques attendent d'être découverts. Résolvez des énigmes et maîtrisez des sorts pour prouver votre valeur et devenir un véritable sorcier. Oserez-vous relever les défis et percer les mystères de cette école secrète ?",
+                "en": "In this magical adventure, you will dive into a mysterious world where ancient secrets await discovery. Solve riddles and master spells to prove your worth and become a true wizard. Will you dare to face the challenges and uncover the mysteries of this secret school?",
+                "de": "In diesem magischen Abenteuer tauchen Sie in eine mysteriöse Welt ein, in der antike Geheimnisse darauf warten, entdeckt zu werden. Lösen Sie Rätsel und meistern Sie Zaubersprüche, um Ihre Fähigkeiten zu beweisen und ein echter Zauberer zu werden. Werden Sie den Herausforderungen gewachsen sein und die Geheimnisse dieser geheimen Schule entschlüsseln?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "11:00"},
-                {"start_time": "11:00", "end_time": "13:00"},
-                {"start_time": "14:00", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "13:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame9.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Lorraine",
                 "en": "Lorraine",
                 "de": "Lothringen"
@@ -264,18 +450,47 @@
                 "en": "Uncover the secrets of Épinal imagery in this artistic escape game!",
                 "de": "Entdecken Sie die Geheimnisse der Épinal-Bilderwelt in diesem künstlerischen Escape-Game!"
             },
+            "description_detaillee": {
+                "fr": "Dans cet escape game, vous plongerez dans l'univers fascinant de l'imagerie d'Épinal, un art populaire qui a traversé les siècles. À travers des énigmes et des indices inspirés de ces célèbres images, vous devrez percer les mystères cachés dans cette fabrique d'images. Saurez-vous résoudre les énigmes et dévoiler les secrets de cette tradition artistique unique ?",
+                "en": "In this escape game, you will dive into the fascinating world of Épinal imagery, a popular art form that has lasted through the centuries. Through puzzles and clues inspired by these famous images, you will uncover the hidden mysteries within this image factory. Will you be able to solve the riddles and reveal the secrets of this unique artistic tradition?",
+                "de": "In diesem Escape-Game tauchen Sie in die faszinierende Welt der Épinal-Bilderwelt ein, einer volkstümlichen Kunstform, die seit Jahrhunderten besteht. Durch Rätsel und Hinweise, die von diesen berühmten Bildern inspiriert sind, werden Sie die verborgenen Geheimnisse in dieser Bilderfabrik aufdecken. Werden Sie in der Lage sein, die Rätsel zu lösen und die Geheimnisse dieser einzigartigen Kunsttradition zu enthüllen?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "10:00"},
-                {"start_time": "10:00", "end_time": "11:00"},
-                {"start_time": "11:00", "end_time": "12:00"},
-                {"start_time": "13:00", "end_time": "14:00"},
-                {"start_time": "14:00", "end_time": "15:00"},
-                {"start_time": "15:00", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "17:00"},
-                {"start_time": "17:00", "end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:00"
+                },
+                {
+                    "start_time": "10:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "15:00"
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:00"
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame10.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Lorraine",
                 "en": "Lorraine",
                 "de": "Lothringen"
@@ -295,15 +510,35 @@
                 "en": "Travel back in time in the universe of Besançon watchmaking!",
                 "de": "Reisen Sie zurück in der Zeit in die Welt der Uhrmacherkunst von Besançon!"
             },
+            "description_detaillee": {
+                "fr": "Dans cet escape game, plongez dans l'histoire de l'horlogerie de Besançon, une ville réputée pour son savoir-faire en matière de montres et d'horloges. Résolvez des énigmes complexes inspirées des mécanismes d'horlogerie pour remonter le temps et découvrir des secrets cachés. Saurez-vous réparer l'horloge astronomique avant qu'il ne soit trop tard ?",
+                "en": "In this escape game, dive into the history of Besançon watchmaking, a city renowned for its expertise in watches and clocks. Solve complex puzzles inspired by watchmaking mechanisms to travel back in time and uncover hidden secrets. Will you be able to repair the astronomical clock before it's too late?",
+                "de": "In diesem Escape-Game tauchen Sie in die Geschichte der Uhrmacherkunst von Besançon ein, einer Stadt, die für ihr Fachwissen in Sachen Uhren und Uhren bekannt ist. Lösen Sie komplexe Rätsel, die von Uhrmechanismen inspiriert sind, um in der Zeit zurückzureisen und verborgene Geheimnisse zu entdecken. Werden Sie in der Lage sein, die astronomische Uhr rechtzeitig zu reparieren?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "10:30"},
-                {"start_time": "10:30", "end_time": "12:00"},
-                {"start_time": "13:00", "end_time": "14:30"},
-                {"start_time": "14:30", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "17:30"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:30"
+                },
+                {
+                    "start_time": "10:30",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:30"
+                },
+                {
+                    "start_time": "14:30",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:30"
+                }
             ],
             "image": "images/egames/egame11.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Franche-Comte",
                 "en": "Franche-Comte",
                 "de": "Franche-Comte"
@@ -323,18 +558,47 @@
                 "en": "Recreate Louis Pasteur's discoveries in his reconstructed laboratory!",
                 "de": "Rekonstruieren Sie Louis Pasteurs Entdeckungen in seinem nachgebildeten Labor!"
             },
+            "description_detaillee": {
+                "fr": "Entrez dans le laboratoire reconstitué de Louis Pasteur et explorez les découvertes qui ont révolutionné la science. Résolvez des énigmes scientifiques et reconstituez les expériences marquantes de Pasteur, telles que la découverte de la vaccination et la pasteurisation. Allez-vous réussir à recréer ses plus grandes découvertes avant la fin du temps imparti ?",
+                "en": "Step into Louis Pasteur's reconstructed laboratory and explore the discoveries that revolutionized science. Solve scientific puzzles and recreate Pasteur's groundbreaking experiments, such as the discovery of vaccination and pasteurization. Will you manage to recreate his greatest discoveries before time runs out?",
+                "de": "Betreten Sie Louis Pasteurs nachgebildetes Labor und entdecken Sie die Entdeckungen, die die Wissenschaft revolutioniert haben. Lösen Sie wissenschaftliche Rätsel und rekonstruieren Sie Pasteurs bahnbrechende Experimente, wie die Entdeckung der Impfung und der Pasteurisierung. Werden Sie es schaffen, seine größten Entdeckungen rechtzeitig zu rekonstruieren?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "10:00"},
-                {"start_time": "10:00", "end_time": "11:00"},
-                {"start_time": "11:00", "end_time": "12:00"},
-                {"start_time": "13:00", "end_time": "14:00"},
-                {"start_time": "14:00", "end_time": "15:00"},
-                {"start_time": "15:00", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "17:00"},
-                {"start_time": "17:00", "end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "10:00"
+                },
+                {
+                    "start_time": "10:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "12:00"
+                },
+                {
+                    "start_time": "13:00",
+                    "end_time": "14:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "15:00"
+                },
+                {
+                    "start_time": "15:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "17:00"
+                },
+                {
+                    "start_time": "17:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame12.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Franche-Comte",
                 "en": "Franche-Comte",
                 "de": "Franche-Comte"
@@ -354,14 +618,31 @@
                 "en": "Defend the Belfort citadel against the invader in this historical adventure!",
                 "de": "Verteidigen Sie die Zitadelle von Belfort gegen den Eindringling in diesem historischen Abenteuer!"
             },
+            "description_detaillee": {
+                "fr": "Plongez dans l'histoire en devenant un défenseur de la citadelle de Belfort, un symbole de la résistance durant les guerres. En cette époque troublée, vous devrez protéger les fortifications contre l'ennemi en résolvant des énigmes historiques et en utilisant des tactiques de défense. Saurez-vous repousser l'envahisseur et préserver l'honneur de la citadelle ?",
+                "en": "Dive into history as a defender of the Belfort citadel, a symbol of resistance during the wars. In this troubled time, you will need to protect the fortifications from the enemy by solving historical puzzles and using defense tactics. Will you manage to repel the invader and preserve the honor of the citadel?",
+                "de": "Tauchen Sie in die Geschichte ein und werden Sie ein Verteidiger der Zitadelle von Belfort, ein Symbol des Widerstands während der Kriege. In dieser schwierigen Zeit müssen Sie die Befestigungen vor dem Feind schützen, indem Sie historische Rätsel lösen und Verteidigungstaktiken anwenden. Werden Sie es schaffen, den Eindringling abzuwehren und die Ehre der Zitadelle zu bewahren?"
+            },
             "time_slots": [
-                {"start_time": "09:00", "end_time": "11:00"},
-                {"start_time": "11:00", "end_time": "13:00"},
-                {"start_time": "14:00", "end_time": "16:00"},
-                {"start_time": "16:00", "end_time": "18:00"}
+                {
+                    "start_time": "09:00",
+                    "end_time": "11:00"
+                },
+                {
+                    "start_time": "11:00",
+                    "end_time": "13:00"
+                },
+                {
+                    "start_time": "14:00",
+                    "end_time": "16:00"
+                },
+                {
+                    "start_time": "16:00",
+                    "end_time": "18:00"
+                }
             ],
             "image": "images/egames/egame13.jpg",
-            "Region":{
+            "Region": {
                 "fr": "Franche-Comte",
                 "en": "Franche-Comte",
                 "de": "Franche-Comte"
