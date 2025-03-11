@@ -1,40 +1,46 @@
+<?php require_once 'includes/formulaire.class.php'; ?>
 <div class="contact-container">
     <div class="background-lines2">
         <img src="images/img/background_rayure.png" alt="background">
     </div>
     <div class="contact-content">
-        <h1 class="contact-title">
-            NOUS
-            <span class="contact-title-span">CONTACTER</span>
-        </h1>
-
-        <form class="contact-form">
+        <h2 class="contact-title" data-translate="contacter">Contactez-nous</h2>
+        <form class="contact-form" action="index.php?action=contact" method="POST">
+            <?php $form = new Formulaire($_POST); ?>
             <div class="form-row">
-                <div class="form-group">
-                    <label for="nom">NOM</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="prenom">PRÉNOM</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
+                <?php
+                echo $form->inputTextcontact('nom', 'NOM',   'nom-contact');
+                echo $form->inputTextcontact('prenom', 'PRÉNOM', 'prenom-contact');
+                ?>
             </div>
-
-            <div class="form-group">
-                <label for="mail">MAIL</label>
-                <input type="text" id="mail" name="mail" required>
-            </div>
-            <div class="form-group">
-                <label for="sujet">SUJET</label>
-                <input type="text" id="sujet" name="sujet" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">VOTRE MESSAGE</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Envoyer</button>
+            <?php
+            echo $form->inputTextcontact('mail', 'MAIL', 'mail-contact');
+            echo $form->inputTextcontact('sujet', 'SUJET', 'sujet-contact');
+            echo $form->inputTextAreacontact('message', 'VOTRE MESSAGE', 'message-contact');
+            ?>
+            <?php
+            echo $form->submitcontact('submit','envoyer-contact');
+            ?>
         </form>
     </div>
 </div>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Capture form data
+    $to = 'contact@alainda-ros.fr'; // Replace with your email address
+    $subject = htmlspecialchars($_POST['sujet']);
+    $message = 'Nom: ' . htmlspecialchars($_POST['nom']) . '\n';
+    $message .= 'Prénom: ' . htmlspecialchars($_POST['prenom']) . '\n';
+    $message .= 'Email: ' . htmlspecialchars($_POST['mail']) . '\n';
+    $message .= 'Message: ' . htmlspecialchars($_POST['message']) . '\n';
+    $headers = 'From: ' . htmlspecialchars($_POST['mail']);
+
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        echo 'Email sent successfully!';
+    } else {
+        echo 'Email sending failed.';
+    }
+}
+?>

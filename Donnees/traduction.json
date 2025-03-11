@@ -142,7 +142,13 @@
         "tarif-enfant2":"Certains de nos jeux offrent un tarif préférentiel pour les enfants de moins de 12 ans.",
         "tarif-enfant3":"Nous recommandons certains scénarios pour les familles et les jeunes joueurs, avec des énigmes adaptées à leur niveau.",
         "tarif-enfant4":"Pour les groupes comprenant des enfants, la présence d’au moins un adulte est requise.",
-        "tarif-enfant5":"Pour connaître les détails des tarifs et les éventuelles réductions disponibles, contactez-nous directement."
+        "tarif-enfant5":"Pour connaître les détails des tarifs et les éventuelles réductions disponibles, contactez-nous directement.",
+        "nom-contact":"NOM",
+        "prenom-contact":"PRÉNOM",
+        "mail-contact":"MAIL",
+        "sujet-contact":"SUJET",
+        "message-contact":"VOTRE MESSAGE",
+        "envoyer-contact":"ENVOYER"
     },
     "en": {
         "accueil": "Home",
@@ -287,7 +293,13 @@
         "tarif-enfant2":"Some of our games offer special rates for children under 12.",
         "tarif-enfant3":"We recommend certain scenarios for families and young players, with puzzles adapted to their level.",
         "tarif-enfant4":"For groups with children, the presence of at least one adult is required.",
-        "tarif-enfant5":"Please contact us directly for details of rates and any available discounts."
+        "tarif-enfant5":"Please contact us directly for details of rates and any available discounts.",
+        "nom-contact":"NAME",
+        "prenom-contact":"FIRST NAME",
+        "mail-contact":"EMAIL",
+        "sujet-contact":"SUBJECT",
+        "message-contact":"YOUR MESSAGE",
+        "envoyer-contact":"SEND"
     },
     "de": {
         "accueil": "Startseite",
@@ -312,7 +324,7 @@
         "compte?":"Noch kein Konto ?",
         "inscrire":"Registrieren",
         "deconnecter":"Abmelden",
-        "nom":"Benutzername",
+        "nom":"Name",
         "sinscrire":"Registrieren",
         "inscrit?":"Bereits registriert ?",
         "connecter":"Anmelden",
@@ -432,6 +444,12 @@
         "tarif-enfant2":"Einige unserer Spiele bieten einen ermäßigten Preis für Kinder unter 12 Jahren.",
         "tarif-enfant3":"Wir empfehlen einige Szenarien für Familien und jüngere Spieler mit Rätseln, die auf ihr Niveau zugeschnitten sind.",
         "tarif-enfant4":"Bei Gruppen mit Kindern muss mindestens ein Erwachsener anwesend sein.",
-        "tarif-enfant5":"Um Einzelheiten zu den Preisen und eventuell verfügbaren Ermäßigungen zu erfahren, wenden Sie sich bitte direkt an uns."
+        "tarif-enfant5":"Um Einzelheiten zu den Preisen und eventuell verfügbaren Ermäßigungen zu erfahren, wenden Sie sich bitte direkt an uns.",
+        "nom-contact":"NAME",
+        "prenom-contact":"VORNAME",
+        "mail-contact":"E-MAIL",
+        "sujet-contact":"BETREFF",
+        "message-contact":"IHRE NACHRICHT",
+        "envoyer-contact":"SENDEN"
     }
 }

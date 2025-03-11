@@ -1,4 +1,7 @@
-<?php $title = "Inscription"; ?>
+<?php 
+$title = "Inscription";
+require_once "includes/formulaire.class.php";
+?>
 
 <div class="background-lines">
     <img src="images/img/background_rayure.png" alt="background">
@@ -11,19 +14,13 @@
     <?php endif; ?>
 
     <form action="index.php?action=register" method="POST" class="auth-form">
-        <div class="form-group">
-            <label for="email" data-translate='email'>EMAIL</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="username" data-translate='nom'>NOM D'UTILISATEUR</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="form-group">
-            <label for="password" data-translate='mdp'>MOT DE PASSE</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit" data-translate='sinscrire'>S'INSCRIRE</button>
+        <?php $form = new Formulaire($_POST); ?>
+        <?php
+        echo $form->inputMailconnection('email', 'Email', 'email');
+        echo $form->inputTextconnection('username', 'Nom d\'utilisateur', 'nom');
+        echo $form->inputMDPconnection('password', 'Mot de passe', 'mdp');
+        echo $form->submitinscription('register'); 
+        ?>
     </form>
     <div class="auth-links">
         <span data-translate='inscrit?'>DÉJA INSCRIT ?</span>
