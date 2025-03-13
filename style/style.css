@@ -912,7 +912,9 @@ footer {
   }
 
   header {
-    width: 75%;
+    width: 295px;
+    margin: auto;
+    margin-top: 15px;
   }
 
   .bg-mountains {
