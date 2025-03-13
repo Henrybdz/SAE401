@@ -11,8 +11,8 @@ $title =  $egame['nom'] . " - WE ESCAPE";
     <div class="ed-background-images">
         <img src="<?= htmlspecialchars($egame['image']) ?>" alt="<?= htmlspecialchars($egame['nom']) ?>" class="ed-bg-mountains" loading="lazy">
         <h2 class="ed-hero-title"><?= htmlspecialchars($egame['nom']) ?></h2>
-        <img src="images/img/cloud.avif" alt="Nuage" class="ed-bg-cloud" loading="lazy">
-        <img src="images/img/cloud.avif" alt="Nuage" class="ed-bg-cloud-1" loading="lazy">
+        <img src="images/img/cloud.webp" alt="Nuage" class="ed-bg-cloud" loading="lazy">
+        <img src="images/img/cloud.webp" alt="Nuage" class="ed-bg-cloud-1" loading="lazy">
     </div>
 </div>
 <div class="content-section-2"></div>
@@ -182,7 +182,7 @@ $title =  $egame['nom'] . " - WE ESCAPE";
             </div>
         </div>
         <div class="image_paiement">
-            <img src="images/img/liste-paiement.avif" alt="Liste des moyens de paiement" loading="lazy">
+            <img src="images/img/liste-paiement.webp" alt="Liste des moyens de paiement" loading="lazy">
         </div>
 
         <div class="text_paiement">

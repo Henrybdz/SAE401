@@ -1,9 +1,9 @@
-<?php require_once 'includes/formulaire.class.php'; 
+<?php require_once 'includes/formulaire.class.php';
 $title = "Contact - WE ESCAPE";
 ?>
 <div class="contact-container">
     <div class="background-lines2">
-        <img src="images/img/background_rayure.avif" alt="background" loading="lazy">
+        <img src="images/img/background_rayure.webp" alt="background" loading="lazy">
     </div>
     <div class="contact-content">
         <h2 class="contact-title" data-translate="contacter">Contactez-nous</h2>

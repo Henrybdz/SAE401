@@ -4,10 +4,10 @@ $title = "Escape Games - WE ESCAPE";
 
 <div class="hero-section">
   <div class="e-background-images">
-    <img src="images/img/Fond-EscapeGames.avif" alt="Labirynth" class="e-bg-mountains" loading="lazy">
+    <img src="images/img/Fond-EscapeGames.webp" alt="Labirynth" class="e-bg-mountains" loading="lazy">
     <h2 class="e-hero-title">ESCAPE GAMES</h2>
-    <img src="images/img/cloud.avif" alt="Nuage" class="e-bg-cloud" loading="lazy">
-    <img src="images/img/cloud.avif" alt="Nuage" class="e-bg-cloud-1" loading="lazy">
+    <img src="images/img/cloud.webp" alt="Nuage" class="e-bg-cloud" loading="lazy">
+    <img src="images/img/cloud.webp" alt="Nuage" class="e-bg-cloud-1" loading="lazy">
   </div>
 </div>
 <div class="content-section-2"></div>

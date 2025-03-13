@@ -219,7 +219,7 @@ nav a:hover::after {
   background-color: #283024;
   z-index: 29;
   padding: 20px;
-  background-image: url(../images/img/background_labyrinthe.avif);
+  background-image: url(../images/img/background_labyrinthe.webp);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: 0 15%;
@@ -760,7 +760,7 @@ nav a:hover::after {
 
 /* Styles pour le footer */
 footer {
-  background: url(../images/img/background_footer.avif);
+  background: url(../images/img/background_footer.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -909,6 +909,10 @@ footer {
 
   .bg-forest {
     display: none;
+  }
+
+  header {
+    width: 75%;
   }
 
   .bg-mountains {

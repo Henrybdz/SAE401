@@ -4,7 +4,7 @@ require_once "includes/formulaire.class.php";
 ?>
 
 <div class="background-lines">
-    <img src="images/img/background_rayure.avif" alt="background" loading="lazy">
+    <img src="images/img/background_rayure.webp" alt="background" loading="lazy">
 </div>
 
 <div class="auth-container">

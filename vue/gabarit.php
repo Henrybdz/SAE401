@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WE ESCAPE - L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE">
-    <link rel="icon" href="images/img/logo_footer.avif" type="image/avif">
+    <link rel="icon" href="images/img/logo_footer.webp" type="image/webp">
     <title><?= $title ?></title>
 
     <link rel="preload" href="style/style.css" as="style">
@@ -19,7 +19,7 @@
 
     <link rel="preload" href="style/reservation.css" as="style">
     <link rel="stylesheet" href="style/reservation.css">
-    
+
     <link rel="preload" href="style/escapegames.css" as="style">
     <link rel="stylesheet" href="style/escapegames.css">
 
@@ -36,7 +36,7 @@
 
 <body>
     <header>
-        <a href="index.php" class="logo"><img src="images/img/logo_footer.avif" alt="Logo We Escape" class="header_title"></a>
+        <a href="index.php" class="logo"><img src="images/img/logo_footer.webp" alt="Logo We Escape" class="header_title"></a>
 
         <!-- Ajout du menu hamburger -->
         <div class="hamburger-menu">
@@ -101,7 +101,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo-section">
-                <img src="images/img/logo_footer.avif" alt="Logo We Escape" class="footer-logo" loading="lazy">
+                <img src="images/img/logo_footer.webp" alt="Logo We Escape" class="footer-logo" loading="lazy">
                 <div class="footer-tagline" data-translate="tagline">L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE</div>
 
                 <div class="footer-contact">
