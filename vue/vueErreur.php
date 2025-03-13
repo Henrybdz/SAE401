@@ -1,6 +1,6 @@
 <?php
-  $titre = "";
-  ?>
-  <div class="erreur">Erreur : <?=$message?></div>
+$title = "Erreur - WE ESCAPE";
+?>
+<div class="erreur">Erreur : <?=$message?></div>
 
 

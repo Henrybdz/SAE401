@@ -64,6 +64,7 @@
   z-index: 29;
   padding: 20px;
 }
+
 /*Style pour zone de filtre*/
 
 .region-filter {
@@ -99,7 +100,7 @@
 
 .egames-container {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 20px;
 }
 
@@ -114,7 +115,7 @@
   position: relative;
   color: white;
   border-radius: 10px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .egame-card p {
@@ -186,6 +187,31 @@
 
 
 
+@media (max-width: 768px) {
 
+  .e-bg-cloud,
+  .e-bg-cloud-1 {
+    display: none;
+  }
 
+  .e-bg-mountains {
+    object-fit: cover;
+  }
 
+  .e-hero-title {
+    font-size: 5rem;
+  }
+
+  .egames-grid {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+
+  .egame-info {
+    text-align: center;
+  }
+
+  .region-filter {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+  }
+}

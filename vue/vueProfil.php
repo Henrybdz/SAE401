@@ -1,11 +1,12 @@
 <?php
+$title = "Profil - WE ESCAPE";
 require_once "controleur/ReservationController.class.php";
 ?>
 
 <div class="profile-page">
     <div class="profile-header">
         <div class="profile-image-container">
-            <img src="images/profils/<?= htmlspecialchars($user['photo_profil']) ?>" alt="Photo de profil" class="profile-image-large">
+            <img src="images/profils/<?= htmlspecialchars($user['photo_profil']) ?>" alt="Photo de profil" class="profile-image-large" loading="lazy">
             <form action="index.php?action=update-profile-picture" method="POST" enctype="multipart/form-data" class="profile-picture-form">
                 <label for="photo" class="custom-file-upload" data-translate='changerphoto'>Changer la photo</label>
                 <input type="file" id="photo" name="photo" accept="image/*" onchange="this.form.submit()" style="display: none;">

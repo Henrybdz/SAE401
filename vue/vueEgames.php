@@ -1,9 +1,13 @@
+<?php
+$title = "Escape Games - WE ESCAPE";
+?>
+
 <div class="hero-section">
   <div class="e-background-images">
-    <img src="images/img/Fond-EscapeGames.png" alt="Labirynth" class="e-bg-mountains">
+    <img src="images/img/Fond-EscapeGames.avif" alt="Labirynth" class="e-bg-mountains" loading="lazy">
     <h2 class="e-hero-title">ESCAPE GAMES</h2>
-    <img src="images/img/cloud.png" alt="Nuage" class="e-bg-cloud">
-    <img src="images/img/cloud.png" alt="Nuage" class="e-bg-cloud-1">
+    <img src="images/img/cloud.avif" alt="Nuage" class="e-bg-cloud" loading="lazy">
+    <img src="images/img/cloud.avif" alt="Nuage" class="e-bg-cloud-1" loading="lazy">
   </div>
 </div>
 <div class="content-section-2"></div>
@@ -25,7 +29,7 @@
       foreach ($egames as $egame) {
         echo '<div class="egame-card" data-region="' . htmlspecialchars(strtoupper($egame['Region']['fr'])) . '">';
         echo '<div class="egame-image">';
-        echo '<img src="' . htmlspecialchars($egame['image']) . '" alt="' . htmlspecialchars($egame['nom']) . '">';
+        echo '<img src="' . htmlspecialchars($egame['image']) . '" alt="' . htmlspecialchars($egame['nom']) . '" loading="lazy">';
         echo '</div>';
         echo '<div class="egame-info">';
         echo '<h2>' . htmlspecialchars($egame['nom']) . '</h2>';

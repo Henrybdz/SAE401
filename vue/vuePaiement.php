@@ -1,7 +1,11 @@
+<?php
+$title = "Paiement - WE ESCAPE";
+?>
+
 <link rel="stylesheet" href="style/paiement.css">
 
 <div class="background-lines">
-    <img src="images/img/background_rayure.png" alt="background">
+    <img src="images/img/background_rayure.avif" alt="background" loading="lazy">
 </div>
 
 <div class="payment-container">

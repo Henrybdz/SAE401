@@ -4,15 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WE ESCAPE - L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE">
+    <link rel="icon" href="images/img/logo_footer.avif" type="image/avif">
     <title><?= $title ?></title>
+
+    <link rel="preload" href="style/style.css" as="style">
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preload" href="style/translation.css" as="style">
     <link rel="stylesheet" href="style/translation.css">
+
+    <link rel="preload" href="style/profil.css" as="style">
     <link rel="stylesheet" href="style/profil.css">
+
+    <link rel="preload" href="style/reservation.css" as="style">
     <link rel="stylesheet" href="style/reservation.css">
+    
+    <link rel="preload" href="style/escapegames.css" as="style">
     <link rel="stylesheet" href="style/escapegames.css">
+
+    <link rel="preload" href="style/contact.css" as="style">
     <link rel="stylesheet" href="style/contact.css">
+
+    <link rel="preload" href="style/register.css" as="style">
     <link rel="stylesheet" href="style/register.css">
-    <script src="script/traduction.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
@@ -20,7 +36,15 @@
 
 <body>
     <header>
-        <a href="index.php" class="logo"><img src="images/img/logo_footer.png" alt="Logo We Escape" class="header_title"></a>
+        <a href="index.php" class="logo"><img src="images/img/logo_footer.avif" alt="Logo We Escape" class="header_title"></a>
+
+        <!-- Ajout du menu hamburger -->
+        <div class="hamburger-menu">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
         <nav>
             <a href='index.php' data-translate='accueil'>Accueil</a>
             <a href='index.php?action=egames' data-translate='egames'>Escape Games</a>
@@ -31,13 +55,13 @@
                 <?php if (isset($_SESSION['user'])): ?>
                     <div class="profile-container">
                         <div class="profile-image-wrapper">
-                            <img src="images/profils/<?= htmlspecialchars($_SESSION['user']['photo_profil']) ?>" alt="Photo de profil" class="profile-image">
+                            <img src="images/profils/<?= htmlspecialchars($_SESSION['user']['photo_profil']) ?>" alt="Photo de profil" class="profile-image" loading="lazy">
                             <div class="profile-hover">
                                 <span class="username"><?= htmlspecialchars($_SESSION['user']['username']) ?></span>
                                 <a href="index.php?action=profile" class="profile-link" data-translate='voirprofil'>Voir le profil</a>
                             </div>
                         </div>
-                        <a href="index.php?action=logout" class="logout-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <a href="index.php?action=logout" class="logout-btn" aria-label="Déconnexion"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3" />
                             </svg></a>
                     </div>
@@ -50,20 +74,20 @@
             <div class="language-selector">
                 <div class="custom-select">
                     <div class="selected-option">
-                        <img src="images/flags/fr.svg" alt="Drapeau français" class="flag-icon">
+                        <img src="images/flags/fr.svg" alt="Drapeau français" class="flag-icon" loading="lazy">
                         <span style="display: none;">Français</span>
                     </div>
                     <div class="options">
                         <div class="option" data-value="fr">
-                            <img src="images/flags/fr.svg" alt="Drapeau français" class="flag-icon">
+                            <img src="images/flags/fr.svg" alt="Drapeau français" class="flag-icon" loading="lazy">
                             <span style="display: none;" data-translate="lang_fr">Français</span>
                         </div>
                         <div class="option" data-value="en">
-                            <img src="images/flags/en.svg" alt="Drapeau anglais" class="flag-icon">
+                            <img src="images/flags/en.svg" alt="Drapeau anglais" class="flag-icon" loading="lazy">
                             <span style="display: none;" data-translate="lang_en">English</span>
                         </div>
                         <div class="option" data-value="de">
-                            <img src="images/flags/de.svg" alt="Drapeau allemand" class="flag-icon">
+                            <img src="images/flags/de.svg" alt="Drapeau allemand" class="flag-icon" loading="lazy">
                             <span style="display: none;" data-translate="lang_de">Deutsch</span>
                         </div>
                     </div>
@@ -77,7 +101,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo-section">
-                <img src="images/img/logo_footer.png" alt="Logo We Escape" class="footer-logo">
+                <img src="images/img/logo_footer.avif" alt="Logo We Escape" class="footer-logo" loading="lazy">
                 <div class="footer-tagline" data-translate="tagline">L'ÉPREUVE PAR ÉQUIPE POUR LE MEILLEUR MOMENT D'ÉQUIPE</div>
 
                 <div class="footer-contact">
@@ -144,7 +168,27 @@
             </div>
         </div>
     </footer>
+    <script src="script/traduction.js" defer></script>
     <script src="script/general.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('nav');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+
+            // Fermer le menu si on clique en dehors
+            document.addEventListener('click', function(e) {
+                if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

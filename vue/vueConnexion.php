@@ -1,10 +1,10 @@
 <?php
-$title = "Connexion";
+$title = "Connexion - WE ESCAPE";
 require_once 'includes/formulaire.class.php';
 ?>
 
 <div class="background-lines">
-    <img src="images/img/background_rayure.png" alt="background">
+    <img src="images/img/background_rayure.avif" alt="background" loading="lazy">
 </div>
 
 <div class="auth-container">

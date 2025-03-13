@@ -1,12 +1,14 @@
-<?php ?>
+<?php 
+$title = "Accueil - WE ESCAPE";
+?>
 <div class="accueil-container">
     <div class="hero-section">
         <div class="background-images">
-            <img src="images/img/mountain.png" alt="Montagnes" class="bg-mountains">
+            <img src="images/img/mountain.avif" alt="Montagnes" class="bg-mountains" loading="lazy">
             <h1 class="hero-title">WE ESCAPE</h1>
-            <img src="images/img/forest.png" alt="Forêt" class="bg-forest">
-            <img src="images/img/cloud.png" alt="Nuage" class="bg-cloud">
-            <img src="images/img/cloud.png" alt="Nuage" class="bg-cloud-1">
+            <img src="images/img/forest.avif" alt="Forêt" class="bg-forest" loading="lazy">
+            <img src="images/img/cloud.avif" alt="Nuage" class="bg-cloud" loading="lazy">
+            <img src="images/img/cloud.avif" alt="Nuage" class="bg-cloud-1" loading="lazy">
         </div>
     </div>
     <div class="content-section-2"></div>
@@ -172,11 +174,11 @@
             <span class="partenaire-span" data-translate="partenaire">partenaire d'expérience</span>
             <span data-translate="de">de</span>
         </h2>
-        <img src="images/img/partenaire.png" alt="liste des partenaires" class="partenaire-img">
+        <img src="images/img/partenaire.avif" alt="liste des partenaires" class="partenaire-img" loading="lazy">
     </div>
 
     <div class="avis-container">
-        <img src="images/img/background_avis.png" alt="avis" class="avis-img">
+        <img src="images/img/background_avis.avif" alt="avis" class="avis-img" loading="lazy">
         <div class="avis-content">
             <div class="carousel-container">
                 <div class="carousel-inner"></div>
@@ -198,7 +200,7 @@
                 <span data-translate="avec">AVEC NOUS</span>.
             </h2>
             <div class="seminaire-item">
-                <img src="images/img/marque_seminaire.png" alt="marque_seminaire">
+                <img src="images/img/marque_seminaire.avif" alt="marque_seminaire" loading="lazy">
             </div>
         </div>
     </div>

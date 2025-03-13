@@ -45,6 +45,7 @@ header {
   right: 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  flex-wrap: wrap;
 }
 
 header:hover {
@@ -218,7 +219,7 @@ nav a:hover::after {
   background-color: #283024;
   z-index: 29;
   padding: 20px;
-  background-image: url(../images/img/background_labyrinthe.png);
+  background-image: url(../images/img/background_labyrinthe.avif);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: 0 15%;
@@ -229,7 +230,7 @@ nav a:hover::after {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  width: 1100px;
+  max-width: 1100px;
   margin-inline: auto;
   margin-bottom: 20px;
 }
@@ -242,7 +243,7 @@ nav a:hover::after {
   font-size: 18px;
   color: white;
   text-align: center;
-  width: 1100px;
+  max-width: 1100px;
   margin-inline: auto;
   font-weight: 200;
   margin-bottom: 40px;
@@ -254,7 +255,7 @@ nav a:hover::after {
   align-items: center;
   gap: 20px;
   background-color: #22291F;
-  width: 1000px;
+  max-width: 1000px;
   margin-inline: auto;
   border-radius: 67px;
   color: white;
@@ -326,7 +327,7 @@ nav a:hover::after {
   align-items: center;
   gap: 20px;
   background: #22291F;
-  width: 100%;
+  max-width: 100%;
   margin-inline: auto;
   text-transform: uppercase;
   color: white;
@@ -340,7 +341,8 @@ nav a:hover::after {
   text-align: center;
 }
 
-.partenaire-span, .seminaire-span {
+.partenaire-span,
+.seminaire-span {
   color: #FF9900;
 }
 
@@ -368,7 +370,7 @@ nav a:hover::after {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  width: 100%;
+  min-width: 100%;
   z-index: 1;
   background: rgba(34, 41, 31, 0.8);
   padding-block: 60px;
@@ -516,7 +518,7 @@ nav a:hover::after {
   height: auto;
   object-fit: contain;
 }
-  
+
 
 /* Styles pour le système de compte */
 .compte {
@@ -656,7 +658,7 @@ nav a:hover::after {
 }
 
 .auth-form button:hover {
-  background: #0056b3;
+  background: #be7507;
 }
 
 .auth-container p {
@@ -758,7 +760,7 @@ nav a:hover::after {
 
 /* Styles pour le footer */
 footer {
-  background: url(../images/img/background_footer.png);
+  background: url(../images/img/background_footer.avif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -890,4 +892,382 @@ footer {
 .footer-award img {
   max-width: 150px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .bg-cloud {
+    display: none;
+  }
+
+  .bg-cloud-1 {
+    display: none;
+  }
+
+  .bg-forest {
+    display: none;
+  }
+
+  .bg-mountains {
+    object-fit: cover;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .content-title {
+    font-size: 30px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .content-section-2 {
+    display: none;
+  }
+
+  .footer-links a {
+    font-size: 10px;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1002;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Media queries pour le responsive */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: rgba(39, 39, 39, 0.95);
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(8px);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-right {
+    margin-left: auto;
+  }
+
+  .auth-buttons {
+    width: auto;
+  }
+}
+
+/* Styles responsive pour l'accueil */
+@media (max-width: 768px) {
+
+  /* Conteneur principal */
+  .accueil-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Section héro */
+  .hero-section {
+    height: 100vh;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .background-images {
+    width: 100%;
+  }
+
+  .bg-mountains {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Section contenu */
+  .content-section {
+    padding: 20px;
+    min-height: 70vh !important;
+  }
+
+  .content-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .content-description {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .content-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content-container-item {
+    width: 100%;
+  }
+
+  /* Carte */
+  .map-container {
+    padding: 20px;
+    display: none;
+  }
+
+  .map-container-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Détail région */
+  .region-detail-content {
+    width: 90%;
+    height: 80%;
+  }
+
+  /* Section partenaire */
+  .partenaire-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .partenaire-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .partenaire-img {
+    width: 80%;
+  }
+
+  /* Section avis */
+  .avis-container {
+    display: none;
+  }
+
+  .avis-content {
+    padding: 30px 20px;
+  }
+
+  .avis-title {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-inner {
+    width: 100%;
+  }
+
+  .carousel-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-btn.prev {
+    left: 5px;
+  }
+
+  .carousel-btn.next {
+    right: 5px;
+  }
+
+  /* Section séminaire */
+  .seminaire-container {
+    height: auto;
+  }
+
+  .seminaire-content {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .seminaire-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .seminaire-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .seminaire-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Ajustements pour tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .content-title {
+    font-size: 28px;
+  }
+
+  .partenaire-container {
+    padding: 40px 20px;
+  }
+
+  .partenaire-img {
+    width: 50%;
+  }
+
+  .avis-container {
+    height: 500px;
+  }
+
+  .seminaire-content {
+    padding: 40px 20px;
+  }
+}
+
+/* Ajustements pour grands écrans */
+@media (min-width: 1025px) {
+  .accueil-container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/* Styles responsifs pour le footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo-section {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-links-section {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-links-title {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Ajustements pour tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    padding: 40px;
+  }
+
+  .footer-container {
+    gap: 40px;
+  }
+
+  .footer-logo {
+    max-width: 180px;
+  }
+
+  .footer-links-section {
+    gap: 30px;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+}
+
+/* Ajustements pour grands écrans */
+@media (min-width: 1025px) {
+  footer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }

@@ -1,3 +1,7 @@
+<?php
+$title =  $egame['nom'] . " - WE ESCAPE";
+?>
+
 <!-- Ajout des dépendances pour le calendrier -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <link rel="stylesheet" href="style/egamedetail.css">
@@ -5,10 +9,10 @@
 
 <div class="hero-section">
     <div class="ed-background-images">
-        <img src="<?= htmlspecialchars($egame['image']) ?>" alt="<?= htmlspecialchars($egame['nom']) ?>" class="ed-bg-mountains">
+        <img src="<?= htmlspecialchars($egame['image']) ?>" alt="<?= htmlspecialchars($egame['nom']) ?>" class="ed-bg-mountains" loading="lazy">
         <h2 class="ed-hero-title"><?= htmlspecialchars($egame['nom']) ?></h2>
-        <img src="images/img/cloud.png" alt="Nuage" class="ed-bg-cloud">
-        <img src="images/img/cloud.png" alt="Nuage" class="ed-bg-cloud-1">
+        <img src="images/img/cloud.avif" alt="Nuage" class="ed-bg-cloud" loading="lazy">
+        <img src="images/img/cloud.avif" alt="Nuage" class="ed-bg-cloud-1" loading="lazy">
     </div>
 </div>
 <div class="content-section-2"></div>
@@ -44,7 +48,7 @@
             <div class="main-content">
                 <h2><?= htmlspecialchars($egame['nom']) ?></h2>
                 <div class="main-image">
-                    <img src="<?= htmlspecialchars($egame['image']) ?>" alt="<?= htmlspecialchars($egame['nom']) ?>">
+                    <img src="<?= htmlspecialchars($egame['image']) ?>" alt="<?= htmlspecialchars($egame['nom']) ?>" loading="lazy">
                 </div>
                 <div class="egame-info">
                     <div class="info-section">
@@ -154,12 +158,12 @@
 
         <div class="language-availability">
             <div class="language-flag">
-                <img src="images/flags/de.svg" alt="Drapeau allemand">
+                <img src="images/flags/de.svg" alt="Drapeau allemand" loading="lazy">
                 <span data-translate="available1">AVENTURE DISPONIBLE EN</span>
                 <span data-translate="available_de" class="langue">ALLEMAND</span>
             </div>
             <div class="language-flag">
-                <img src="images/flags/en.svg" alt="Drapeau anglais">
+                <img src="images/flags/en.svg" alt="Drapeau anglais" loading="lazy">
                 <span data-translate="available2">AVENTURE EGALEMENT DISPONIBLE EN</span>
                 <span data-translate="available_en" class="langue">ANGLAIS</span>
             </div>
@@ -178,7 +182,7 @@
             </div>
         </div>
         <div class="image_paiement">
-            <img src="images/img/liste-paiement.png" alt="Liste des moyens de paiement">
+            <img src="images/img/liste-paiement.avif" alt="Liste des moyens de paiement" loading="lazy">
         </div>
 
         <div class="text_paiement">
@@ -231,7 +235,7 @@
                 </svg>
             </div>
 
-            <div class="faq-answer">    
+            <div class="faq-answer">
                 <p data-translate="taille-groupe1">Voici quelques conseils pour choisir la meilleure configuration :</p>
                 <ul>
                     <li data-translate="taille-groupe2">Petits groupes (2-3 joueurs) : Idéal pour les amateurs de défis qui aiment résoudre les énigmes par eux-mêmes. L’expérience sera plus intense, mais aussi plus exigeante.</li>
